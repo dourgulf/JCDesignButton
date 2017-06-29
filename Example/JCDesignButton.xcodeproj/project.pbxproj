@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		893B5C8E1EFCEA000082A316 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 893B5C8D1EFCEA000082A316 /* main.m */; };
+		893B5C911EFCEA000082A316 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 893B5C901EFCEA000082A316 /* AppDelegate.m */; };
+		893B5C941EFCEA000082A316 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 893B5C931EFCEA000082A316 /* ViewController.m */; };
+		893B5C971EFCEA000082A316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893B5C951EFCEA000082A316 /* Main.storyboard */; };
+		893B5C991EFCEA000082A316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893B5C981EFCEA000082A316 /* Assets.xcassets */; };
+		893B5C9C1EFCEA000082A316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893B5C9A1EFCEA000082A316 /* LaunchScreen.storyboard */; };
+		897EE24B1F04997D00B37E63 /* JCIconFontKitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 897EE24A1F04997D00B37E63 /* JCIconFontKitButton.m */; };
+		897EE24C1F04A2B700B37E63 /* JCDesignButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 897F46BD1F0264FE003264DD /* JCDesignButton.m */; };
+		897EE24D1F04A2B700B37E63 /* JCDesignButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897F46BE1F0264FE003264DD /* JCDesignButton.xib */; };
+		897EE24E1F04A2B700B37E63 /* JCIconFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897F46C01F0264FE003264DD /* JCIconFontManager.m */; };
+		897EE24F1F04A2B700B37E63 /* JCIconFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 893974361F038045002E4605 /* JCIconFontLabel.m */; };
+		E663E7D86A87C3BB7C35BF52 /* libPods-JCDesignButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D352B9508434E047441380 /* libPods-JCDesignButton.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C1D845935191F969F8CB6A2 /* Pods-JCDesignButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCDesignButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCDesignButton/Pods-JCDesignButton.debug.xcconfig"; sourceTree = "<group>"; };
+		6B75772E47048F9C2CA7F351 /* Pods-JCDesignButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCDesignButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCDesignButton/Pods-JCDesignButton.release.xcconfig"; sourceTree = "<group>"; };
+		893974351F038045002E4605 /* JCIconFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIconFontLabel.h; sourceTree = "<group>"; };
+		893974361F038045002E4605 /* JCIconFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIconFontLabel.m; sourceTree = "<group>"; };
+		893B5C891EFCEA000082A316 /* JCDesignButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCDesignButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		893B5C8D1EFCEA000082A316 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		893B5C8F1EFCEA000082A316 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		893B5C901EFCEA000082A316 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		893B5C921EFCEA000082A316 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		893B5C931EFCEA000082A316 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		893B5C961EFCEA000082A316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		893B5C981EFCEA000082A316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		893B5C9B1EFCEA000082A316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		893B5C9D1EFCEA000082A316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897EE2491F04997D00B37E63 /* JCIconFontKitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIconFontKitButton.h; sourceTree = "<group>"; };
+		897EE24A1F04997D00B37E63 /* JCIconFontKitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIconFontKitButton.m; sourceTree = "<group>"; };
+		897F46BC1F0264FE003264DD /* JCDesignButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDesignButton.h; sourceTree = "<group>"; };
+		897F46BD1F0264FE003264DD /* JCDesignButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDesignButton.m; sourceTree = "<group>"; };
+		897F46BE1F0264FE003264DD /* JCDesignButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCDesignButton.xib; sourceTree = "<group>"; };
+		897F46BF1F0264FE003264DD /* JCIconFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIconFontManager.h; sourceTree = "<group>"; };
+		897F46C01F0264FE003264DD /* JCIconFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIconFontManager.m; sourceTree = "<group>"; };
+		A9D352B9508434E047441380 /* libPods-JCDesignButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCDesignButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		893B5C861EFCEA000082A316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E663E7D86A87C3BB7C35BF52 /* libPods-JCDesignButton.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		893B5C801EFCEA000082A316 = {
+			isa = PBXGroup;
+			children = (
+				897F46BB1F0264FE003264DD /* JCDesignButton */,
+				893B5C8B1EFCEA000082A316 /* Example */,
+				893B5C8A1EFCEA000082A316 /* Products */,
+				DD7A48D063D192EBFBF45627 /* Pods */,
+				9C45A1A412AB9EFCA846C290 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		893B5C8A1EFCEA000082A316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				893B5C891EFCEA000082A316 /* JCDesignButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		893B5C8B1EFCEA000082A316 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				893B5C8F1EFCEA000082A316 /* AppDelegate.h */,
+				893B5C901EFCEA000082A316 /* AppDelegate.m */,
+				893B5C921EFCEA000082A316 /* ViewController.h */,
+				893B5C931EFCEA000082A316 /* ViewController.m */,
+				893B5C951EFCEA000082A316 /* Main.storyboard */,
+				897EE2491F04997D00B37E63 /* JCIconFontKitButton.h */,
+				897EE24A1F04997D00B37E63 /* JCIconFontKitButton.m */,
+				893B5C981EFCEA000082A316 /* Assets.xcassets */,
+				893B5C9A1EFCEA000082A316 /* LaunchScreen.storyboard */,
+				893B5C9D1EFCEA000082A316 /* Info.plist */,
+				893B5C8C1EFCEA000082A316 /* Supporting Files */,
+			);
+			name = Example;
+			path = JCDesignButton;
+			sourceTree = "<group>";
+		};
+		893B5C8C1EFCEA000082A316 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				893B5C8D1EFCEA000082A316 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		897F46BB1F0264FE003264DD /* JCDesignButton */ = {
+			isa = PBXGroup;
+			children = (
+				897F46BC1F0264FE003264DD /* JCDesignButton.h */,
+				897F46BD1F0264FE003264DD /* JCDesignButton.m */,
+				897F46BE1F0264FE003264DD /* JCDesignButton.xib */,
+				897F46BF1F0264FE003264DD /* JCIconFontManager.h */,
+				897F46C01F0264FE003264DD /* JCIconFontManager.m */,
+				893974351F038045002E4605 /* JCIconFontLabel.h */,
+				893974361F038045002E4605 /* JCIconFontLabel.m */,
+			);
+			name = JCDesignButton;
+			path = ../JCDesignButton;
+			sourceTree = "<group>";
+		};
+		9C45A1A412AB9EFCA846C290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9D352B9508434E047441380 /* libPods-JCDesignButton.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD7A48D063D192EBFBF45627 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C1D845935191F969F8CB6A2 /* Pods-JCDesignButton.debug.xcconfig */,
+				6B75772E47048F9C2CA7F351 /* Pods-JCDesignButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		893B5C881EFCEA000082A316 /* JCDesignButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 893B5CA01EFCEA000082A316 /* Build configuration list for PBXNativeTarget "JCDesignButton" */;
+			buildPhases = (
+				D44A3595B2DE79AD1E447045 /* [CP] Check Pods Manifest.lock */,
+				893B5C851EFCEA000082A316 /* Sources */,
+				893B5C861EFCEA000082A316 /* Frameworks */,
+				893B5C871EFCEA000082A316 /* Resources */,
+				3B2639D79732466E1698F0FE /* [CP] Embed Pods Frameworks */,
+				E5E6D775AA8D8CE90D2964A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCDesignButton;
+			productName = JCDesignButton;
+			productReference = 893B5C891EFCEA000082A316 /* JCDesignButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		893B5C811EFCEA000082A316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = DawenRie;
+				TargetAttributes = {
+					893B5C881EFCEA000082A316 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 893B5C841EFCEA000082A316 /* Build configuration list for PBXProject "JCDesignButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 893B5C801EFCEA000082A316;
+			productRefGroup = 893B5C8A1EFCEA000082A316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				893B5C881EFCEA000082A316 /* JCDesignButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		893B5C871EFCEA000082A316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893B5C9C1EFCEA000082A316 /* LaunchScreen.storyboard in Resources */,
+				893B5C991EFCEA000082A316 /* Assets.xcassets in Resources */,
+				897EE24D1F04A2B700B37E63 /* JCDesignButton.xib in Resources */,
+				893B5C971EFCEA000082A316 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B2639D79732466E1698F0FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCDesignButton/Pods-JCDesignButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44A3595B2DE79AD1E447045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E6D775AA8D8CE90D2964A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCDesignButton/Pods-JCDesignButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		893B5C851EFCEA000082A316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893B5C941EFCEA000082A316 /* ViewController.m in Sources */,
+				897EE24F1F04A2B700B37E63 /* JCIconFontLabel.m in Sources */,
+				893B5C911EFCEA000082A316 /* AppDelegate.m in Sources */,
+				897EE24E1F04A2B700B37E63 /* JCIconFontManager.m in Sources */,
+				897EE24B1F04997D00B37E63 /* JCIconFontKitButton.m in Sources */,
+				897EE24C1F04A2B700B37E63 /* JCDesignButton.m in Sources */,
+				893B5C8E1EFCEA000082A316 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		893B5C951EFCEA000082A316 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				893B5C961EFCEA000082A316 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		893B5C9A1EFCEA000082A316 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				893B5C9B1EFCEA000082A316 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		893B5C9E1EFCEA000082A316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		893B5C9F1EFCEA000082A316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		893B5CA11EFCEA000082A316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1D845935191F969F8CB6A2 /* Pods-JCDesignButton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JCDesignButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.inhand.JCDesignButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		893B5CA21EFCEA000082A316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B75772E47048F9C2CA7F351 /* Pods-JCDesignButton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JCDesignButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.inhand.JCDesignButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		893B5C841EFCEA000082A316 /* Build configuration list for PBXProject "JCDesignButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				893B5C9E1EFCEA000082A316 /* Debug */,
+				893B5C9F1EFCEA000082A316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		893B5CA01EFCEA000082A316 /* Build configuration list for PBXNativeTarget "JCDesignButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				893B5CA11EFCEA000082A316 /* Debug */,
+				893B5CA21EFCEA000082A316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 893B5C811EFCEA000082A316 /* Project object */;
+}

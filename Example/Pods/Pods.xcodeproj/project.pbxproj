@@ -1,0 +1,1292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0127978FCB3223C7016C2E9A2C2F6F2A /* IFZocialButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B4B754116CADA7F6C01E764B8AC5D /* IFZocialButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D8995CBF50D9F3CCF8070E96C8A129D /* IFLinea.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5FD90AC2EAF5815AB25D5DF7E2705D /* IFLinea.m */; };
+		0F1AD22230B41EDCA6019C53DE6C4B78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C621C41CBDC4BAC427447328E0B1B7F8 /* Foundation.framework */; };
+		1051ABAA21E1ADE8C548CF153C44D2D8 /* IconFontKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 211B454C56BA3A0CAAF143111D5C48D3 /* IconFontKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11A1866525383053860145860D5A3AD9 /* IFDevicons.h in Headers */ = {isa = PBXBuildFile; fileRef = 270909EAE370F07DE8C72D0AD00C12C2 /* IFDevicons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15E47CCAFEC32F0D31D164D6245EFFEE /* IFGenericons.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D74E45110B825A871968B4C1761164F /* IFGenericons.m */; };
+		175F49BD22D2F8A84A1293E17B4798CD /* IFFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DED41F5D0F365B51DF60683ACC876 /* IFFontAwesome.m */; };
+		178E95A4995D4315F23F3BFCD77DE3EC /* IFZocialButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = C0317F8D46F0161532AA62EB64516C60 /* IFZocialButtons.m */; };
+		19A3F0A234D848BB7727B8372F4B9CBC /* IFHawconsStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6AFE559379E9DA97B07ED5BD3B8B22 /* IFHawconsStroke.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B14C4A8767B15EF0D37D920E5E282BF /* IFMaterialIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 06AA87768D780F7293AAF65C8201A8ED /* IFMaterialIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		262E09264C9D1112EC23C137397E038F /* IFTypicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C3BB9ACBEEF2B0090872A164EA900 /* IFTypicons.m */; };
+		2A67972E1C7DCD21A5C112839916E5B8 /* IFFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A40ED060CA3170041C9CE46486ABEE5 /* IFFoundationIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AC46FC62FE81E28B2AA3A20681F21B5 /* IFHawconsStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91074B011342CF8092A87C2394A8EC9A /* IFHawconsStroke.m */; };
+		312E0D03578AD73BC30A1B70D5AFE084 /* IFElusiveIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 47065473D0C5CD2DBFCD55E60F4FD974 /* IFElusiveIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		375C8281A52BAB431DE0A4EF99410ED5 /* IFStreamlineFree.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0B219835580AEBC804302AD27AB673 /* IFStreamlineFree.m */; };
+		413FAE2485098CCF75F31A2E08090FB4 /* IFMetrizeIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F26367DD573E77D2DEA8CB677D6D3 /* IFMetrizeIcons.m */; };
+		420D4D183F081BF626CBB804EF313B92 /* IFOpenWebIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C879233387F30BA1036A4D1379EF040 /* IFOpenWebIcons.m */; };
+		441B1C005FD50EBE0FBE6BCDCCF2D716 /* IFGenericons.h in Headers */ = {isa = PBXBuildFile; fileRef = 9811DB069BE0E3AC31FA5BF6C4A3B831 /* IFGenericons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44315A4D4E5F61D3AD29B1EF21328AB1 /* IFIcoMoonFree.h in Headers */ = {isa = PBXBuildFile; fileRef = 258EB81A4B37149FE9BAFC32DFA48C69 /* IFIcoMoonFree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D4D3DEBD7BAA034782EBBD186D42F /* IFMapIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = F322A616CC13BD6ECB3B2B76C08A098E /* IFMapIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F48310FD51BEADE65BF7970DF00D9C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4DA0A74DBD96D6365BB1E8BBA65AE1 /* CoreText.framework */; };
+		4ADB7270F86480882A6261B1069F4905 /* IFIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA406599BF64D3A1DB64FD40B6AE14D7 /* IFIcon.m */; };
+		4B3D5C255043EF622782E0FDD96B6EA8 /* IFFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA83F823B4C15A987AF5235188861C1 /* IFFoundationIcons.m */; };
+		5177E37F7F95AA189EE17A2091594975 /* Pods-JCDesignButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742F422AB419EBE0E26328EC9781134 /* Pods-JCDesignButton-dummy.m */; };
+		53C73594D8DAB3EC1F0E5A7654F0D3E7 /* IFEntypo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9708506F4E88ED00924A13FCDBD26D /* IFEntypo.m */; };
+		544D0820F10BE5AE6BF82A5464F4289F /* IFMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A61FC11EF9D67DD8769362370A0C6BB /* IFMaterialIcons.m */; };
+		58F6242486E5B5E175081A155DD10DF7 /* IFOpenIconic.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A68BAC236B6DBEA53D21ED0777420 /* IFOpenIconic.m */; };
+		641DF6086429C7568457D18CA1E0A755 /* IFIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0D14D750B99535236F91EC3DCA6441 /* IFIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		659514C5B0D4B018DBD796FC41B800A4 /* IFMaterialDesignIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = BCBC8F3B0D99E5121F1672A172760588 /* IFMaterialDesignIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6833281F81E049B37BA673AA7629E471 /* IFMeteocons.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6EF5C9DB88005A7EA0C6BDCA1132FA /* IFMeteocons.m */; };
+		685080CE85BFD397F11CC549059E5F18 /* IFHawconsFilled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B707396CECEE4952D9C6630C3EF39 /* IFHawconsFilled.m */; };
+		6C35AF7298D45B16FFC7D9271BBFFE25 /* IFOpenIconic.h in Headers */ = {isa = PBXBuildFile; fileRef = AECFCEB17BE38481D3A8F3B93C5A3B65 /* IFOpenIconic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7049A267B185570B17449B4D6EAA664E /* IFStroke7Icons.h in Headers */ = {isa = PBXBuildFile; fileRef = DD898799A334EAA52FD6E482787B1BCA /* IFStroke7Icons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7635A193A46F7FA43E14DEF2C2E50C70 /* IFEntypo.h in Headers */ = {isa = PBXBuildFile; fileRef = 037E535DDF266EEEBE8D7588802EB1D3 /* IFEntypo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78399881F89E4DF6726AB05E496C6E85 /* IFOcticons.h in Headers */ = {isa = PBXBuildFile; fileRef = 96256728109DC5CE3F23A0F8FD355072 /* IFOcticons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B06874E4E6921AADD1E04BD371DF610 /* IFMetrizeIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BF0CE33852AACCA17BA3538A81F5B /* IFMetrizeIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB02C2153514306D32BD058309E22F5 /* IFThemifyIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = A2938D70207A34E32643C802802182A9 /* IFThemifyIcons.m */; };
+		7FB5EBBC59DBC6AD3227D3D5B3392D93 /* IFDevicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB69C24EAC2B7736DE95B3AC78256D0 /* IFDevicons.m */; };
+		82017FA6372AA89873D335DE78B681DF /* IFLineariconsFree.m in Sources */ = {isa = PBXBuildFile; fileRef = FE457DFA64CB0B4881BD5D72C936E40E /* IFLineariconsFree.m */; };
+		9215FEF9ECA4FC74BCD65267A3748152 /* IFEvilIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD920792B671EF131CBCB61CB5A0DF53 /* IFEvilIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		929A775E40564C2739653EE4A1BD1DE1 /* IFHawconsFilled.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C0C4AEFCE8DDB8BC7602333A587FD6 /* IFHawconsFilled.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9685F561D08DCEE949FAAF6E44207F7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C621C41CBDC4BAC427447328E0B1B7F8 /* Foundation.framework */; };
+		9813AF245332437DE23F29C4634F22C0 /* IFOpenWebIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4BE458B94FD874EFA69AE2CB0EA7AD /* IFOpenWebIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99512FCF53EE4E73C1DA6262A510D2B2 /* IFStroke7Icons.m in Sources */ = {isa = PBXBuildFile; fileRef = A4736E5C0FAC37E1A11C031BE450CD56 /* IFStroke7Icons.m */; };
+		9AF137967842A87A875D0A63B351923F /* IFIonicons.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF73BAAECFEF85DDC25E6CEC36CBFFD /* IFIonicons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DCFB5BC1EEF44C55F8C68676993873F /* IFDashicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 92293494713E6E871218E77F9B341A8F /* IFDashicons.m */; };
+		A03306A9BC1C37C29811254E229F941D /* IFEvilIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = E935FF1727A9903AC87E0C0D3040744B /* IFEvilIcons.m */; };
+		A162C1C4B49F3831311BC6CC7448E8CF /* IFDripicons.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C20D6C17CC97F37CB8A5BA0E98DB61 /* IFDripicons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4519E7D33F3F2B3B1FBC108AB894D93 /* IFMaterialDesignIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B41302313A6C2E56257B6726892CC /* IFMaterialDesignIcons.m */; };
+		A4EE9F1A3FB6C4FBCE9DC6C52907B8D7 /* IFLineariconsFree.h in Headers */ = {isa = PBXBuildFile; fileRef = 909EDCBF798FFC2F0F5FF5199DC2927A /* IFLineariconsFree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A567A467A911B255B1F048EF24B5733D /* IFMFGLabsIconset.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B00E3C194BB1357283BA2A00F784027 /* IFMFGLabsIconset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A57900FC0564BC9DBB89956241BFAD89 /* IFLigatureSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 0115FADEB512A70BC4312010828F8D3E /* IFLigatureSymbols.m */; };
+		A90B87FD63B086CF2FC5C879B1618003 /* IFMFGLabsIconset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A61BCB00B8C7DB2C93C5E7C5E68709D /* IFMFGLabsIconset.m */; };
+		AE5FF0773FC298FEBE6FE9E8E672A7D5 /* IFElusiveIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E014AC5893E438B032B17B4DF486F7 /* IFElusiveIcons.m */; };
+		B33D0C89B36E311338A8D9FCB352D9D2 /* IFMeteocons.h in Headers */ = {isa = PBXBuildFile; fileRef = BB764957991984D25C6222874CB16750 /* IFMeteocons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B342F75E328597C224AB5792278EDDF5 /* IFIcoMoonFree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218576AC76FDA07203FF16D64AD14F9 /* IFIcoMoonFree.m */; };
+		B7ED109E981787192487FB33B5D0FC9F /* IFLigatureSymbols.h in Headers */ = {isa = PBXBuildFile; fileRef = AF21C02511F5CFBF30252924949BBC39 /* IFLigatureSymbols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8193CD46F11D2246996E282E507193C /* IFStreamlineFree.h in Headers */ = {isa = PBXBuildFile; fileRef = 43CABD816EE266BB78618D833359A415 /* IFStreamlineFree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2E4582FAC5E37B53F23184C516FA591 /* IFDripicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DEFF750041F7BBC09C0A2C224969CA /* IFDripicons.m */; };
+		C4283E335760987E196FA1024429A2D1 /* IFWeatherIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = B472043072BC1B34E4BFDAA3C94212A5 /* IFWeatherIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C454B2F08F1A0841AA9E467A6C4405A2 /* IFTypicons.h in Headers */ = {isa = PBXBuildFile; fileRef = 8517430D989B9C35D306EE0563A11CF2 /* IFTypicons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8B6F0CB375413377B7AC470C5421A0 /* IFThemifyIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A1638393A6457164B221F8A96CF986 /* IFThemifyIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE585C67F41E69272B10D192C511F13F /* IFLinea.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDC5C8C34EFD0892E0C21A944670D96 /* IFLinea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0AF3B6B4FB5ECF65C96F83D049303D3 /* IconFontKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE9F363FB8BE57C187B382381E95E7 /* IconFontKit-dummy.m */; };
+		D2AB680F648D57008D7BCEB6106DDBA9 /* IFFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD21D4C8A3198EF3DBBF5894973C7AC /* IFFontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6E51FF0C979741A0525ECDAF8790C0D /* IFWeatherIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = D115C5607E0EDD58240F8BA3EE523DE7 /* IFWeatherIcons.m */; };
+		E142A6D43C02DCB31C76A179EEA7F77D /* IFOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = 284DA398D20BAE3A05ABF49D1BEDFA5C /* IFOcticons.m */; };
+		E3FE0A5418D3D6B372592DB20947A1F2 /* IFIonicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B05C978EAD4C4B71FA62327EC316DF /* IFIonicons.m */; };
+		F249368C02079B7FCCB9313385FA33D4 /* IFDashicons.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F7189FF9420CC81466AE23BD3F01E8 /* IFDashicons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F276FA553CF773DBB7386D82E61E345E /* IFMapIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F8E24262CA3F047E7813C4881CF886 /* IFMapIcons.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBC3A121279D005AD7D839A859C23FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0AFDA6D8D33CAA7C3860507E66F5646;
+			remoteInfo = IconFontKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003BF0CE33852AACCA17BA3538A81F5B /* IFMetrizeIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFMetrizeIcons.h; path = IconFontKit/IFMetrizeIcons.h; sourceTree = "<group>"; };
+		0115FADEB512A70BC4312010828F8D3E /* IFLigatureSymbols.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFLigatureSymbols.m; path = IconFontKit/IFLigatureSymbols.m; sourceTree = "<group>"; };
+		025E90D47ED923ECF65E61D9F6B2D2E2 /* Hawcons-Stroke.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Hawcons-Stroke.ttf"; path = "IconFontKit/Hawcons-Stroke.ttf"; sourceTree = "<group>"; };
+		037E535DDF266EEEBE8D7588802EB1D3 /* IFEntypo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFEntypo.h; path = IconFontKit/IFEntypo.h; sourceTree = "<group>"; };
+		06AA87768D780F7293AAF65C8201A8ED /* IFMaterialIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFMaterialIcons.h; path = IconFontKit/IFMaterialIcons.h; sourceTree = "<group>"; };
+		0BA83F823B4C15A987AF5235188861C1 /* IFFoundationIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFFoundationIcons.m; path = IconFontKit/IFFoundationIcons.m; sourceTree = "<group>"; };
+		0D5AC74A4174C6D07B61C05C5B46443B /* StreamlineFree.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = StreamlineFree.ttf; path = IconFontKit/StreamlineFree.ttf; sourceTree = "<group>"; };
+		14DEFF750041F7BBC09C0A2C224969CA /* IFDripicons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFDripicons.m; path = IconFontKit/IFDripicons.m; sourceTree = "<group>"; };
+		15C28F1A1BCD739F7AA97EF1F4BDB0E9 /* foundation-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "foundation-icons.ttf"; path = "IconFontKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		17C0C4AEFCE8DDB8BC7602333A587FD6 /* IFHawconsFilled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFHawconsFilled.h; path = IconFontKit/IFHawconsFilled.h; sourceTree = "<group>"; };
+		19B7989CA5FD8CE5EFE41910363A7F7E /* IconFontKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconFontKit-prefix.pch"; sourceTree = "<group>"; };
+		1D4BE458B94FD874EFA69AE2CB0EA7AD /* IFOpenWebIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFOpenWebIcons.h; path = IconFontKit/IFOpenWebIcons.h; sourceTree = "<group>"; };
+		1DF73BAAECFEF85DDC25E6CEC36CBFFD /* IFIonicons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFIonicons.h; path = IconFontKit/IFIonicons.h; sourceTree = "<group>"; };
+		1FE1DE7400B50B08D01FBF174AEF8E95 /* Pods-JCDesignButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCDesignButton.debug.xcconfig"; sourceTree = "<group>"; };
+		211B454C56BA3A0CAAF143111D5C48D3 /* IconFontKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IconFontKit.h; path = IconFontKit/IconFontKit.h; sourceTree = "<group>"; };
+		2218576AC76FDA07203FF16D64AD14F9 /* IFIcoMoonFree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFIcoMoonFree.m; path = IconFontKit/IFIcoMoonFree.m; sourceTree = "<group>"; };
+		258EB81A4B37149FE9BAFC32DFA48C69 /* IFIcoMoonFree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFIcoMoonFree.h; path = IconFontKit/IFIcoMoonFree.h; sourceTree = "<group>"; };
+		270909EAE370F07DE8C72D0AD00C12C2 /* IFDevicons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFDevicons.h; path = IconFontKit/IFDevicons.h; sourceTree = "<group>"; };
+		2742F422AB419EBE0E26328EC9781134 /* Pods-JCDesignButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCDesignButton-dummy.m"; sourceTree = "<group>"; };
+		284DA398D20BAE3A05ABF49D1BEDFA5C /* IFOcticons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFOcticons.m; path = IconFontKit/IFOcticons.m; sourceTree = "<group>"; };
+		2C1011B08674E19BD6D1829B8C07DDF6 /* materialdesignicons-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "materialdesignicons-webfont.ttf"; path = "IconFontKit/materialdesignicons-webfont.ttf"; sourceTree = "<group>"; };
+		2C3B41302313A6C2E56257B6726892CC /* IFMaterialDesignIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFMaterialDesignIcons.m; path = IconFontKit/IFMaterialDesignIcons.m; sourceTree = "<group>"; };
+		31CE9F363FB8BE57C187B382381E95E7 /* IconFontKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IconFontKit-dummy.m"; sourceTree = "<group>"; };
+		36DD303A565F62E58BD13B09850C83E4 /* IconFontKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IconFontKit.xcconfig; sourceTree = "<group>"; };
+		3C6F26367DD573E77D2DEA8CB677D6D3 /* IFMetrizeIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFMetrizeIcons.m; path = IconFontKit/IFMetrizeIcons.m; sourceTree = "<group>"; };
+		3F6DED41F5D0F365B51DF60683ACC876 /* IFFontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFFontAwesome.m; path = IconFontKit/IFFontAwesome.m; sourceTree = "<group>"; };
+		429028EA219C833520E09B5293511BB4 /* Pods-JCDesignButton-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCDesignButton-frameworks.sh"; sourceTree = "<group>"; };
+		43CABD816EE266BB78618D833359A415 /* IFStreamlineFree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFStreamlineFree.h; path = IconFontKit/IFStreamlineFree.h; sourceTree = "<group>"; };
+		453B4B754116CADA7F6C01E764B8AC5D /* IFZocialButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFZocialButtons.h; path = IconFontKit/IFZocialButtons.h; sourceTree = "<group>"; };
+		47065473D0C5CD2DBFCD55E60F4FD974 /* IFElusiveIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFElusiveIcons.h; path = IconFontKit/IFElusiveIcons.h; sourceTree = "<group>"; };
+		477E8596A96C8BA9A844DF393ECB56F8 /* Pods-JCDesignButton-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCDesignButton-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49A1638393A6457164B221F8A96CF986 /* IFThemifyIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFThemifyIcons.h; path = IconFontKit/IFThemifyIcons.h; sourceTree = "<group>"; };
+		4AB69C24EAC2B7736DE95B3AC78256D0 /* IFDevicons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFDevicons.m; path = IconFontKit/IFDevicons.m; sourceTree = "<group>"; };
+		4D400A800E44C026187D7F349AC4523B /* Hawcons-Filled.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Hawcons-Filled.ttf"; path = "IconFontKit/Hawcons-Filled.ttf"; sourceTree = "<group>"; };
+		4D74E45110B825A871968B4C1761164F /* IFGenericons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFGenericons.m; path = IconFontKit/IFGenericons.m; sourceTree = "<group>"; };
+		4E72DD314C0451B778A2A39DBF30F144 /* Genericons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Genericons.ttf; path = IconFontKit/Genericons.ttf; sourceTree = "<group>"; };
+		55C20D6C17CC97F37CB8A5BA0E98DB61 /* IFDripicons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFDripicons.h; path = IconFontKit/IFDripicons.h; sourceTree = "<group>"; };
+		55F7189FF9420CC81466AE23BD3F01E8 /* IFDashicons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFDashicons.h; path = IconFontKit/IFDashicons.h; sourceTree = "<group>"; };
+		5BEB2F3449C6C63E8FED6926D8804612 /* elusiveicons-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "elusiveicons-webfont.ttf"; path = "IconFontKit/elusiveicons-webfont.ttf"; sourceTree = "<group>"; };
+		5C879233387F30BA1036A4D1379EF040 /* IFOpenWebIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFOpenWebIcons.m; path = IconFontKit/IFOpenWebIcons.m; sourceTree = "<group>"; };
+		5E4B5389A576B8774EC91872123ADC17 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.otf; path = IconFontKit/FontAwesome.otf; sourceTree = "<group>"; };
+		6189EEA17DACE82C6174083EC7F2E515 /* open-iconic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "open-iconic.ttf"; path = "IconFontKit/open-iconic.ttf"; sourceTree = "<group>"; };
+		645C6159D817F4CDB082F2BAC034ABCE /* Pe-icon-7-stroke.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pe-icon-7-stroke.ttf"; path = "IconFontKit/Pe-icon-7-stroke.ttf"; sourceTree = "<group>"; };
+		64EB1DCA4DECAEC7495097E0C64EE6AF /* dashicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = dashicons.ttf; path = IconFontKit/dashicons.ttf; sourceTree = "<group>"; };
+		6EE9277E9FB7370C486219E9EE65F3B3 /* octicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = octicons.ttf; path = IconFontKit/octicons.ttf; sourceTree = "<group>"; };
+		73E4B6B21119480E750A0FE9323E2D30 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "MaterialIcons-Regular.ttf"; path = "IconFontKit/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		7525931BF0128CADA0D5883934DB4DC6 /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = ionicons.ttf; path = IconFontKit/ionicons.ttf; sourceTree = "<group>"; };
+		76D9342830406EFB1BECAB7008134071 /* LigatureSymbols.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = LigatureSymbols.ttf; path = IconFontKit/LigatureSymbols.ttf; sourceTree = "<group>"; };
+		776A68BAC236B6DBEA53D21ED0777420 /* IFOpenIconic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFOpenIconic.m; path = IconFontKit/IFOpenIconic.m; sourceTree = "<group>"; };
+		785C3BB9ACBEEF2B0090872A164EA900 /* IFTypicons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFTypicons.m; path = IconFontKit/IFTypicons.m; sourceTree = "<group>"; };
+		7AD14FAF1F0280EB20E54EF27B7D154B /* libPods-JCDesignButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JCDesignButton.a"; path = "libPods-JCDesignButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B00E3C194BB1357283BA2A00F784027 /* IFMFGLabsIconset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFMFGLabsIconset.h; path = IconFontKit/IFMFGLabsIconset.h; sourceTree = "<group>"; };
+		7CDC5C8C34EFD0892E0C21A944670D96 /* IFLinea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFLinea.h; path = IconFontKit/IFLinea.h; sourceTree = "<group>"; };
+		7E9708506F4E88ED00924A13FCDBD26D /* IFEntypo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFEntypo.m; path = IconFontKit/IFEntypo.m; sourceTree = "<group>"; };
+		82BB6E932542FDE15F4F9EAD05DCB144 /* typicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = typicons.ttf; path = IconFontKit/typicons.ttf; sourceTree = "<group>"; };
+		8517430D989B9C35D306EE0563A11CF2 /* IFTypicons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFTypicons.h; path = IconFontKit/IFTypicons.h; sourceTree = "<group>"; };
+		8A2B707396CECEE4952D9C6630C3EF39 /* IFHawconsFilled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFHawconsFilled.m; path = IconFontKit/IFHawconsFilled.m; sourceTree = "<group>"; };
+		8A40ED060CA3170041C9CE46486ABEE5 /* IFFoundationIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFFoundationIcons.h; path = IconFontKit/IFFoundationIcons.h; sourceTree = "<group>"; };
+		8B4DA0A74DBD96D6365BB1E8BBA65AE1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		909EDCBF798FFC2F0F5FF5199DC2927A /* IFLineariconsFree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFLineariconsFree.h; path = IconFontKit/IFLineariconsFree.h; sourceTree = "<group>"; };
+		91074B011342CF8092A87C2394A8EC9A /* IFHawconsStroke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFHawconsStroke.m; path = IconFontKit/IFHawconsStroke.m; sourceTree = "<group>"; };
+		92293494713E6E871218E77F9B341A8F /* IFDashicons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFDashicons.m; path = IconFontKit/IFDashicons.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96256728109DC5CE3F23A0F8FD355072 /* IFOcticons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFOcticons.h; path = IconFontKit/IFOcticons.h; sourceTree = "<group>"; };
+		97B05C978EAD4C4B71FA62327EC316DF /* IFIonicons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFIonicons.m; path = IconFontKit/IFIonicons.m; sourceTree = "<group>"; };
+		9811DB069BE0E3AC31FA5BF6C4A3B831 /* IFGenericons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFGenericons.h; path = IconFontKit/IFGenericons.h; sourceTree = "<group>"; };
+		9845C85B6459E3C04214579FE18A114B /* Linearicons-Free.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Linearicons-Free.ttf"; path = "IconFontKit/Linearicons-Free.ttf"; sourceTree = "<group>"; };
+		9A61BCB00B8C7DB2C93C5E7C5E68709D /* IFMFGLabsIconset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFMFGLabsIconset.m; path = IconFontKit/IFMFGLabsIconset.m; sourceTree = "<group>"; };
+		9A61FC11EF9D67DD8769362370A0C6BB /* IFMaterialIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFMaterialIcons.m; path = IconFontKit/IFMaterialIcons.m; sourceTree = "<group>"; };
+		9B0D14D750B99535236F91EC3DCA6441 /* IFIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFIcon.h; path = IconFontKit/IFIcon.h; sourceTree = "<group>"; };
+		9DF5083C96C6F69B743601E3E26FEB44 /* Pods-JCDesignButton-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCDesignButton-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F52C45D371EEBB89BEF0E382B71ED06 /* Pods-JCDesignButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCDesignButton.release.xcconfig"; sourceTree = "<group>"; };
+		A2938D70207A34E32643C802802182A9 /* IFThemifyIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFThemifyIcons.m; path = IconFontKit/IFThemifyIcons.m; sourceTree = "<group>"; };
+		A4736E5C0FAC37E1A11C031BE450CD56 /* IFStroke7Icons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFStroke7Icons.m; path = IconFontKit/IFStroke7Icons.m; sourceTree = "<group>"; };
+		A608FE0FC46C91E18C049D975F26350A /* mfglabsiconset-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "mfglabsiconset-webfont.ttf"; path = "IconFontKit/mfglabsiconset-webfont.ttf"; sourceTree = "<group>"; };
+		A6A0B4533A60A660DDB8A201324E75E6 /* dripicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = dripicons.ttf; path = IconFontKit/dripicons.ttf; sourceTree = "<group>"; };
+		AD920792B671EF131CBCB61CB5A0DF53 /* IFEvilIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFEvilIcons.h; path = IconFontKit/IFEvilIcons.h; sourceTree = "<group>"; };
+		AECFCEB17BE38481D3A8F3B93C5A3B65 /* IFOpenIconic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFOpenIconic.h; path = IconFontKit/IFOpenIconic.h; sourceTree = "<group>"; };
+		AF21C02511F5CFBF30252924949BBC39 /* IFLigatureSymbols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFLigatureSymbols.h; path = IconFontKit/IFLigatureSymbols.h; sourceTree = "<group>"; };
+		AFCA6285DFA9320FA1488F1F0CE405ED /* themify.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = themify.ttf; path = IconFontKit/themify.ttf; sourceTree = "<group>"; };
+		B472043072BC1B34E4BFDAA3C94212A5 /* IFWeatherIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFWeatherIcons.h; path = IconFontKit/IFWeatherIcons.h; sourceTree = "<group>"; };
+		B8087CF57E056F33554A6802C4039257 /* openwebicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = openwebicons.ttf; path = IconFontKit/openwebicons.ttf; sourceTree = "<group>"; };
+		B94EA0447EEA4059E1D61C697EE93649 /* map-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "map-icons.ttf"; path = "IconFontKit/map-icons.ttf"; sourceTree = "<group>"; };
+		BA6AFE559379E9DA97B07ED5BD3B8B22 /* IFHawconsStroke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFHawconsStroke.h; path = IconFontKit/IFHawconsStroke.h; sourceTree = "<group>"; };
+		BAD21D4C8A3198EF3DBBF5894973C7AC /* IFFontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFFontAwesome.h; path = IconFontKit/IFFontAwesome.h; sourceTree = "<group>"; };
+		BB764957991984D25C6222874CB16750 /* IFMeteocons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFMeteocons.h; path = IconFontKit/IFMeteocons.h; sourceTree = "<group>"; };
+		BC0B219835580AEBC804302AD27AB673 /* IFStreamlineFree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFStreamlineFree.m; path = IconFontKit/IFStreamlineFree.m; sourceTree = "<group>"; };
+		BCBC8F3B0D99E5121F1672A172760588 /* IFMaterialDesignIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFMaterialDesignIcons.h; path = IconFontKit/IFMaterialDesignIcons.h; sourceTree = "<group>"; };
+		C0317F8D46F0161532AA62EB64516C60 /* IFZocialButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFZocialButtons.m; path = IconFontKit/IFZocialButtons.m; sourceTree = "<group>"; };
+		C0F8E24262CA3F047E7813C4881CF886 /* IFMapIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFMapIcons.m; path = IconFontKit/IFMapIcons.m; sourceTree = "<group>"; };
+		C23E3BDB189D5F9A1765B092B9B76A5E /* Pods-JCDesignButton-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCDesignButton-resources.sh"; sourceTree = "<group>"; };
+		C621C41CBDC4BAC427447328E0B1B7F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC37A6545308B76FB04BDD274D60E0F2 /* libIconFontKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIconFontKit.a; path = libIconFontKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D077F3B30D69499E4F704CA5FD669CFA /* zocial.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = zocial.ttf; path = IconFontKit/zocial.ttf; sourceTree = "<group>"; };
+		D115C5607E0EDD58240F8BA3EE523DE7 /* IFWeatherIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFWeatherIcons.m; path = IconFontKit/IFWeatherIcons.m; sourceTree = "<group>"; };
+		DA406599BF64D3A1DB64FD40B6AE14D7 /* IFIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFIcon.m; path = IconFontKit/IFIcon.m; sourceTree = "<group>"; };
+		DA7505C6D002C507B281D84443ACFF77 /* Entypo.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Entypo.ttf; path = IconFontKit/Entypo.ttf; sourceTree = "<group>"; };
+		DD898799A334EAA52FD6E482787B1BCA /* IFStroke7Icons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFStroke7Icons.h; path = IconFontKit/IFStroke7Icons.h; sourceTree = "<group>"; };
+		E1A04EC33ED3BDFC62C53ADD551A997E /* devicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = devicons.ttf; path = IconFontKit/devicons.ttf; sourceTree = "<group>"; };
+		E1E014AC5893E438B032B17B4DF486F7 /* IFElusiveIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFElusiveIcons.m; path = IconFontKit/IFElusiveIcons.m; sourceTree = "<group>"; };
+		E83E0F6D7A5E5067C6A7AB63C2672563 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "weathericons-regular-webfont.ttf"; path = "IconFontKit/weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
+		E935FF1727A9903AC87E0C0D3040744B /* IFEvilIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFEvilIcons.m; path = IconFontKit/IFEvilIcons.m; sourceTree = "<group>"; };
+		EE6EF5C9DB88005A7EA0C6BDCA1132FA /* IFMeteocons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFMeteocons.m; path = IconFontKit/IFMeteocons.m; sourceTree = "<group>"; };
+		F322A616CC13BD6ECB3B2B76C08A098E /* IFMapIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFMapIcons.h; path = IconFontKit/IFMapIcons.h; sourceTree = "<group>"; };
+		F37EBA0C2A398EAB7E5FC2CE2F5B8DC9 /* Metrize-Icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Metrize-Icons.ttf"; path = "IconFontKit/Metrize-Icons.ttf"; sourceTree = "<group>"; };
+		F3AA3226B87BFF8073427E1EBF8747E8 /* IcoMoon-Free.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "IcoMoon-Free.ttf"; path = "IconFontKit/IcoMoon-Free.ttf"; sourceTree = "<group>"; };
+		F876779275112FDB4E82607EAE583526 /* meteocons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = meteocons.ttf; path = IconFontKit/meteocons.ttf; sourceTree = "<group>"; };
+		F8E7C043FCA05C01D91CE33772797608 /* Linea.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Linea.ttf; path = IconFontKit/Linea.ttf; sourceTree = "<group>"; };
+		F99106E3C937A3739A93036F681B9AFE /* EvilIcons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = EvilIcons.ttf; path = IconFontKit/EvilIcons.ttf; sourceTree = "<group>"; };
+		FE457DFA64CB0B4881BD5D72C936E40E /* IFLineariconsFree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFLineariconsFree.m; path = IconFontKit/IFLineariconsFree.m; sourceTree = "<group>"; };
+		FE5FD90AC2EAF5815AB25D5DF7E2705D /* IFLinea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFLinea.m; path = IconFontKit/IFLinea.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D482B53E10D85CCBDA224EFB5280BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F48310FD51BEADE65BF7970DF00D9C /* CoreText.framework in Frameworks */,
+				0F1AD22230B41EDCA6019C53DE6C4B78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD6D94990F901A59DEB5A35EC8D1169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9685F561D08DCEE949FAAF6E44207F7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00404341E0E5E3BFBA71D15EB2487D7E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D14D750B99535236F91EC3DCA6441 /* IFIcon.h */,
+				DA406599BF64D3A1DB64FD40B6AE14D7 /* IFIcon.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		005E449050467C9582F61C1EE2B5AEDF /* ThemifyIcons */ = {
+			isa = PBXGroup;
+			children = (
+				49A1638393A6457164B221F8A96CF986 /* IFThemifyIcons.h */,
+				A2938D70207A34E32643C802802182A9 /* IFThemifyIcons.m */,
+				5F67CE9746553455B3E514DBE07F13D8 /* Resources */,
+			);
+			name = ThemifyIcons;
+			sourceTree = "<group>";
+		};
+		0A83826742FBD8F1DBD75CE6E33B2B49 /* OpenWebIcons */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BE458B94FD874EFA69AE2CB0EA7AD /* IFOpenWebIcons.h */,
+				5C879233387F30BA1036A4D1379EF040 /* IFOpenWebIcons.m */,
+				90E38887CCD87D37FFDD48C5E95D1746 /* Resources */,
+			);
+			name = OpenWebIcons;
+			sourceTree = "<group>";
+		};
+		0B2EC0ADAD9A50CC5460D9F0F36CB8E2 /* HawconsStroke */ = {
+			isa = PBXGroup;
+			children = (
+				BA6AFE559379E9DA97B07ED5BD3B8B22 /* IFHawconsStroke.h */,
+				91074B011342CF8092A87C2394A8EC9A /* IFHawconsStroke.m */,
+				C0E754AF3C136C1BF68B0EF5BC16159F /* Resources */,
+			);
+			name = HawconsStroke;
+			sourceTree = "<group>";
+		};
+		0CA6764782E82AEE22860DF7D199CED5 /* Pods-JCDesignButton */ = {
+			isa = PBXGroup;
+			children = (
+				477E8596A96C8BA9A844DF393ECB56F8 /* Pods-JCDesignButton-acknowledgements.markdown */,
+				9DF5083C96C6F69B743601E3E26FEB44 /* Pods-JCDesignButton-acknowledgements.plist */,
+				2742F422AB419EBE0E26328EC9781134 /* Pods-JCDesignButton-dummy.m */,
+				429028EA219C833520E09B5293511BB4 /* Pods-JCDesignButton-frameworks.sh */,
+				C23E3BDB189D5F9A1765B092B9B76A5E /* Pods-JCDesignButton-resources.sh */,
+				1FE1DE7400B50B08D01FBF174AEF8E95 /* Pods-JCDesignButton.debug.xcconfig */,
+				9F52C45D371EEBB89BEF0E382B71ED06 /* Pods-JCDesignButton.release.xcconfig */,
+			);
+			name = "Pods-JCDesignButton";
+			path = "Target Support Files/Pods-JCDesignButton";
+			sourceTree = "<group>";
+		};
+		0D8F89CFFA8DF8834634D59358E0DB55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D077F3B30D69499E4F704CA5FD669CFA /* zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		12D4A0870FE2465F274C7403DBAEC1CA /* LineariconsFree */ = {
+			isa = PBXGroup;
+			children = (
+				909EDCBF798FFC2F0F5FF5199DC2927A /* IFLineariconsFree.h */,
+				FE457DFA64CB0B4881BD5D72C936E40E /* IFLineariconsFree.m */,
+				A758671F5CC288CB39F73601D9F460B4 /* Resources */,
+			);
+			name = LineariconsFree;
+			sourceTree = "<group>";
+		};
+		15126587C5D2DB121863BC7946B9BFDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B94EA0447EEA4059E1D61C697EE93649 /* map-icons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19822F4A75123DDF0270F195E6F25677 /* MaterialDesignIcons */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC8F3B0D99E5121F1672A172760588 /* IFMaterialDesignIcons.h */,
+				2C3B41302313A6C2E56257B6726892CC /* IFMaterialDesignIcons.m */,
+				56F992288537967831E1CB0D587E0A12 /* Resources */,
+			);
+			name = MaterialDesignIcons;
+			sourceTree = "<group>";
+		};
+		1AA49FA69167257322D0F1F5D8545DAE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CA6764782E82AEE22860DF7D199CED5 /* Pods-JCDesignButton */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		211FE4F4B7901B9443D0FCBD855B3BA2 /* Meteocons */ = {
+			isa = PBXGroup;
+			children = (
+				BB764957991984D25C6222874CB16750 /* IFMeteocons.h */,
+				EE6EF5C9DB88005A7EA0C6BDCA1132FA /* IFMeteocons.m */,
+				64B1A365957F851ACC2A12EEE32CD96E /* Resources */,
+			);
+			name = Meteocons;
+			sourceTree = "<group>";
+		};
+		25A6AF0EF22E8F4D6FE7501F9D38935F /* OpenIconic */ = {
+			isa = PBXGroup;
+			children = (
+				AECFCEB17BE38481D3A8F3B93C5A3B65 /* IFOpenIconic.h */,
+				776A68BAC236B6DBEA53D21ED0777420 /* IFOpenIconic.m */,
+				2B094D8EFECAFF7773C53071F6E6FF7A /* Resources */,
+			);
+			name = OpenIconic;
+			sourceTree = "<group>";
+		};
+		271ABBA1E69939886F1DB246B9CFC76B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F37EBA0C2A398EAB7E5FC2CE2F5B8DC9 /* Metrize-Icons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2743B561F2E0A5AD75FD496C25C12C78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76D9342830406EFB1BECAB7008134071 /* LigatureSymbols.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2B094D8EFECAFF7773C53071F6E6FF7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6189EEA17DACE82C6174083EC7F2E515 /* open-iconic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		32FE94AB878C8E14B2D2324F2C5994AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E72DD314C0451B778A2A39DBF30F144 /* Genericons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		350C9B720E9BFD9540AE3938D3E73DE4 /* WeatherIcons */ = {
+			isa = PBXGroup;
+			children = (
+				B472043072BC1B34E4BFDAA3C94212A5 /* IFWeatherIcons.h */,
+				D115C5607E0EDD58240F8BA3EE523DE7 /* IFWeatherIcons.m */,
+				9D08571ABE57A65DC7DE00442B2FF886 /* Resources */,
+			);
+			name = WeatherIcons;
+			sourceTree = "<group>";
+		};
+		378DF5D292BB60219DA38979B90E2969 /* FoundationIcons */ = {
+			isa = PBXGroup;
+			children = (
+				8A40ED060CA3170041C9CE46486ABEE5 /* IFFoundationIcons.h */,
+				0BA83F823B4C15A987AF5235188861C1 /* IFFoundationIcons.m */,
+				DFCCE69717D01C3851AD1B4445D22DDC /* Resources */,
+			);
+			name = FoundationIcons;
+			sourceTree = "<group>";
+		};
+		397A0C964D13A82B98C74A68561A0AAD /* MetrizeIcons */ = {
+			isa = PBXGroup;
+			children = (
+				003BF0CE33852AACCA17BA3538A81F5B /* IFMetrizeIcons.h */,
+				3C6F26367DD573E77D2DEA8CB677D6D3 /* IFMetrizeIcons.m */,
+				271ABBA1E69939886F1DB246B9CFC76B /* Resources */,
+			);
+			name = MetrizeIcons;
+			sourceTree = "<group>";
+		};
+		3C4A82DF4FBA60FE88AA3710F0F9F9C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8E7C043FCA05C01D91CE33772797608 /* Linea.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4159B3323E5D7CFF8A85C9F8CB29D548 /* Dripicons */ = {
+			isa = PBXGroup;
+			children = (
+				55C20D6C17CC97F37CB8A5BA0E98DB61 /* IFDripicons.h */,
+				14DEFF750041F7BBC09C0A2C224969CA /* IFDripicons.m */,
+				BA32D501FF68F6DA12650B6866D58BA0 /* Resources */,
+			);
+			name = Dripicons;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C76C7E92D5A58749B7AC72C3B76AB9A9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4489EFC1F1243786267EBC8716816D68 /* IconFontKit */ = {
+			isa = PBXGroup;
+			children = (
+				211B454C56BA3A0CAAF143111D5C48D3 /* IconFontKit.h */,
+				00404341E0E5E3BFBA71D15EB2487D7E /* Core */,
+				9D70C8901D8F25C3A31144AF0406F884 /* Dashicons */,
+				EA696CF8B50B9A85D55732DED3AE5035 /* Devicons */,
+				4159B3323E5D7CFF8A85C9F8CB29D548 /* Dripicons */,
+				657A7B95FB0DC9EEDA5B48BBADFB6D20 /* ElusiveIcons */,
+				51A800831AA0358D62A1BA980809C22F /* Entypo */,
+				AC1D8242C7555824C5979E2DC45D3787 /* EvilIcons */,
+				921867772D431B5DB6155A0588BB639D /* FontAwesome */,
+				378DF5D292BB60219DA38979B90E2969 /* FoundationIcons */,
+				D6E9CA23C83498092A586F90F2878A7E /* Genericons */,
+				74C23189A31E87C52F4AC68E63491EC6 /* HawconsFilled */,
+				0B2EC0ADAD9A50CC5460D9F0F36CB8E2 /* HawconsStroke */,
+				9DB9DF5F6A2308B9AE6698D7ABB2715C /* IcoMoonFree */,
+				68E4BF10EAEF9ADB6FC2A99C05E2EE4E /* Ionicons */,
+				7F3B56A08EB6BDF1393B0B6B1A43A95D /* LigatureSymbols */,
+				765B15BE330D0FDE38B39491D3C6220D /* Linea */,
+				12D4A0870FE2465F274C7403DBAEC1CA /* LineariconsFree */,
+				E7637B326FAC7DAB8E8F4BA837CCA60F /* MapIcons */,
+				19822F4A75123DDF0270F195E6F25677 /* MaterialDesignIcons */,
+				9889F1DD209FBF09D69651FB731CD6AC /* MaterialIcons */,
+				211FE4F4B7901B9443D0FCBD855B3BA2 /* Meteocons */,
+				397A0C964D13A82B98C74A68561A0AAD /* MetrizeIcons */,
+				98980CA918FADDE71EF0DAFA6EB06EA0 /* MFGLabsIconset */,
+				A7076321AAE140578200B4458421A936 /* Octicons */,
+				25A6AF0EF22E8F4D6FE7501F9D38935F /* OpenIconic */,
+				0A83826742FBD8F1DBD75CE6E33B2B49 /* OpenWebIcons */,
+				C399788EF00C1E2C1EB01ABDEAD4D9CB /* StreamlineFree */,
+				E84E057FFBE8BEDAF4236C71C0DA7566 /* Stroke7Icons */,
+				7DFEBE722625EDB11CA271F121EB3665 /* Support Files */,
+				005E449050467C9582F61C1EE2B5AEDF /* ThemifyIcons */,
+				E2C2330E3D3D5823CE7E797B0CCEBBA3 /* Typicons */,
+				350C9B720E9BFD9540AE3938D3E73DE4 /* WeatherIcons */,
+				AACE432CDB3E8FCC93FEDEDB0754835E /* ZocialButtons */,
+			);
+			name = IconFontKit;
+			path = IconFontKit;
+			sourceTree = "<group>";
+		};
+		4C79C2438EB4DDDE18BF12821573B3E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E4B5389A576B8774EC91872123ADC17 /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F5C5B5173706888DEFE2CA5FD237CD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82BB6E932542FDE15F4F9EAD05DCB144 /* typicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		51A800831AA0358D62A1BA980809C22F /* Entypo */ = {
+			isa = PBXGroup;
+			children = (
+				037E535DDF266EEEBE8D7588802EB1D3 /* IFEntypo.h */,
+				7E9708506F4E88ED00924A13FCDBD26D /* IFEntypo.m */,
+				E0D421D82C33C191CDE29BDBDC41D079 /* Resources */,
+			);
+			name = Entypo;
+			sourceTree = "<group>";
+		};
+		56F992288537967831E1CB0D587E0A12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C1011B08674E19BD6D1829B8C07DDF6 /* materialdesignicons-webfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5F67CE9746553455B3E514DBE07F13D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA6285DFA9320FA1488F1F0CE405ED /* themify.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		64B1A365957F851ACC2A12EEE32CD96E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F876779275112FDB4E82607EAE583526 /* meteocons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		657A7B95FB0DC9EEDA5B48BBADFB6D20 /* ElusiveIcons */ = {
+			isa = PBXGroup;
+			children = (
+				47065473D0C5CD2DBFCD55E60F4FD974 /* IFElusiveIcons.h */,
+				E1E014AC5893E438B032B17B4DF486F7 /* IFElusiveIcons.m */,
+				79DD50D6829DB2FBD3D7E16823A68FD2 /* Resources */,
+			);
+			name = ElusiveIcons;
+			sourceTree = "<group>";
+		};
+		68E4BF10EAEF9ADB6FC2A99C05E2EE4E /* Ionicons */ = {
+			isa = PBXGroup;
+			children = (
+				1DF73BAAECFEF85DDC25E6CEC36CBFFD /* IFIonicons.h */,
+				97B05C978EAD4C4B71FA62327EC316DF /* IFIonicons.m */,
+				8AC94409506E7E1C095DFAE9DC3CA46E /* Resources */,
+			);
+			name = Ionicons;
+			sourceTree = "<group>";
+		};
+		74C23189A31E87C52F4AC68E63491EC6 /* HawconsFilled */ = {
+			isa = PBXGroup;
+			children = (
+				17C0C4AEFCE8DDB8BC7602333A587FD6 /* IFHawconsFilled.h */,
+				8A2B707396CECEE4952D9C6630C3EF39 /* IFHawconsFilled.m */,
+				C76919CD0DB70A401EA2767A24F97A03 /* Resources */,
+			);
+			name = HawconsFilled;
+			sourceTree = "<group>";
+		};
+		764B2BC3E7FD2D641F1F38E9FA38E712 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6EE9277E9FB7370C486219E9EE65F3B3 /* octicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		765B15BE330D0FDE38B39491D3C6220D /* Linea */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC5C8C34EFD0892E0C21A944670D96 /* IFLinea.h */,
+				FE5FD90AC2EAF5815AB25D5DF7E2705D /* IFLinea.m */,
+				3C4A82DF4FBA60FE88AA3710F0F9F9C4 /* Resources */,
+			);
+			name = Linea;
+			sourceTree = "<group>";
+		};
+		79DD50D6829DB2FBD3D7E16823A68FD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BEB2F3449C6C63E8FED6926D8804612 /* elusiveicons-webfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7CDDB737F623324134CB7E8AE36DA93F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73E4B6B21119480E750A0FE9323E2D30 /* MaterialIcons-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D4C9817AE6797AEA1676D96BEB5E9863 /* Pods */,
+				AD6DED744E996013462E7DE645CF033B /* Products */,
+				1AA49FA69167257322D0F1F5D8545DAE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DFEBE722625EDB11CA271F121EB3665 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36DD303A565F62E58BD13B09850C83E4 /* IconFontKit.xcconfig */,
+				31CE9F363FB8BE57C187B382381E95E7 /* IconFontKit-dummy.m */,
+				19B7989CA5FD8CE5EFE41910363A7F7E /* IconFontKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IconFontKit";
+			sourceTree = "<group>";
+		};
+		7F3B56A08EB6BDF1393B0B6B1A43A95D /* LigatureSymbols */ = {
+			isa = PBXGroup;
+			children = (
+				AF21C02511F5CFBF30252924949BBC39 /* IFLigatureSymbols.h */,
+				0115FADEB512A70BC4312010828F8D3E /* IFLigatureSymbols.m */,
+				2743B561F2E0A5AD75FD496C25C12C78 /* Resources */,
+			);
+			name = LigatureSymbols;
+			sourceTree = "<group>";
+		};
+		89F571CC48478D2D01BE278A0E03168B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3AA3226B87BFF8073427E1EBF8747E8 /* IcoMoon-Free.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8AC94409506E7E1C095DFAE9DC3CA46E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7525931BF0128CADA0D5883934DB4DC6 /* ionicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8BB29F39DC753815619349F55AB1B026 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D5AC74A4174C6D07B61C05C5B46443B /* StreamlineFree.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		90E38887CCD87D37FFDD48C5E95D1746 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8087CF57E056F33554A6802C4039257 /* openwebicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		921867772D431B5DB6155A0588BB639D /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				BAD21D4C8A3198EF3DBBF5894973C7AC /* IFFontAwesome.h */,
+				3F6DED41F5D0F365B51DF60683ACC876 /* IFFontAwesome.m */,
+				4C79C2438EB4DDDE18BF12821573B3E7 /* Resources */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		9889F1DD209FBF09D69651FB731CD6AC /* MaterialIcons */ = {
+			isa = PBXGroup;
+			children = (
+				06AA87768D780F7293AAF65C8201A8ED /* IFMaterialIcons.h */,
+				9A61FC11EF9D67DD8769362370A0C6BB /* IFMaterialIcons.m */,
+				7CDDB737F623324134CB7E8AE36DA93F /* Resources */,
+			);
+			name = MaterialIcons;
+			sourceTree = "<group>";
+		};
+		98980CA918FADDE71EF0DAFA6EB06EA0 /* MFGLabsIconset */ = {
+			isa = PBXGroup;
+			children = (
+				7B00E3C194BB1357283BA2A00F784027 /* IFMFGLabsIconset.h */,
+				9A61BCB00B8C7DB2C93C5E7C5E68709D /* IFMFGLabsIconset.m */,
+				A1A2D12BA5A920A3A7CC3CAA5C8551EE /* Resources */,
+			);
+			name = MFGLabsIconset;
+			sourceTree = "<group>";
+		};
+		9D08571ABE57A65DC7DE00442B2FF886 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E83E0F6D7A5E5067C6A7AB63C2672563 /* weathericons-regular-webfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D70C8901D8F25C3A31144AF0406F884 /* Dashicons */ = {
+			isa = PBXGroup;
+			children = (
+				55F7189FF9420CC81466AE23BD3F01E8 /* IFDashicons.h */,
+				92293494713E6E871218E77F9B341A8F /* IFDashicons.m */,
+				A251B8A158A7FA51B4B64323C0B6902A /* Resources */,
+			);
+			name = Dashicons;
+			sourceTree = "<group>";
+		};
+		9DB9DF5F6A2308B9AE6698D7ABB2715C /* IcoMoonFree */ = {
+			isa = PBXGroup;
+			children = (
+				258EB81A4B37149FE9BAFC32DFA48C69 /* IFIcoMoonFree.h */,
+				2218576AC76FDA07203FF16D64AD14F9 /* IFIcoMoonFree.m */,
+				89F571CC48478D2D01BE278A0E03168B /* Resources */,
+			);
+			name = IcoMoonFree;
+			sourceTree = "<group>";
+		};
+		A1A2D12BA5A920A3A7CC3CAA5C8551EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A608FE0FC46C91E18C049D975F26350A /* mfglabsiconset-webfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A1C35DC2B534A58A857A55C4D1038DF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F99106E3C937A3739A93036F681B9AFE /* EvilIcons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A251B8A158A7FA51B4B64323C0B6902A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64EB1DCA4DECAEC7495097E0C64EE6AF /* dashicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A7076321AAE140578200B4458421A936 /* Octicons */ = {
+			isa = PBXGroup;
+			children = (
+				96256728109DC5CE3F23A0F8FD355072 /* IFOcticons.h */,
+				284DA398D20BAE3A05ABF49D1BEDFA5C /* IFOcticons.m */,
+				764B2BC3E7FD2D641F1F38E9FA38E712 /* Resources */,
+			);
+			name = Octicons;
+			sourceTree = "<group>";
+		};
+		A758671F5CC288CB39F73601D9F460B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9845C85B6459E3C04214579FE18A114B /* Linearicons-Free.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AACE432CDB3E8FCC93FEDEDB0754835E /* ZocialButtons */ = {
+			isa = PBXGroup;
+			children = (
+				453B4B754116CADA7F6C01E764B8AC5D /* IFZocialButtons.h */,
+				C0317F8D46F0161532AA62EB64516C60 /* IFZocialButtons.m */,
+				0D8F89CFFA8DF8834634D59358E0DB55 /* Resources */,
+			);
+			name = ZocialButtons;
+			sourceTree = "<group>";
+		};
+		AC1D8242C7555824C5979E2DC45D3787 /* EvilIcons */ = {
+			isa = PBXGroup;
+			children = (
+				AD920792B671EF131CBCB61CB5A0DF53 /* IFEvilIcons.h */,
+				E935FF1727A9903AC87E0C0D3040744B /* IFEvilIcons.m */,
+				A1C35DC2B534A58A857A55C4D1038DF2 /* Resources */,
+			);
+			name = EvilIcons;
+			sourceTree = "<group>";
+		};
+		AD6DED744E996013462E7DE645CF033B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC37A6545308B76FB04BDD274D60E0F2 /* libIconFontKit.a */,
+				7AD14FAF1F0280EB20E54EF27B7D154B /* libPods-JCDesignButton.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA32D501FF68F6DA12650B6866D58BA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6A0B4533A60A660DDB8A201324E75E6 /* dripicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C0E754AF3C136C1BF68B0EF5BC16159F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				025E90D47ED923ECF65E61D9F6B2D2E2 /* Hawcons-Stroke.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C399788EF00C1E2C1EB01ABDEAD4D9CB /* StreamlineFree */ = {
+			isa = PBXGroup;
+			children = (
+				43CABD816EE266BB78618D833359A415 /* IFStreamlineFree.h */,
+				BC0B219835580AEBC804302AD27AB673 /* IFStreamlineFree.m */,
+				8BB29F39DC753815619349F55AB1B026 /* Resources */,
+			);
+			name = StreamlineFree;
+			sourceTree = "<group>";
+		};
+		C76919CD0DB70A401EA2767A24F97A03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D400A800E44C026187D7F349AC4523B /* Hawcons-Filled.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C76C7E92D5A58749B7AC72C3B76AB9A9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B4DA0A74DBD96D6365BB1E8BBA65AE1 /* CoreText.framework */,
+				C621C41CBDC4BAC427447328E0B1B7F8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D4C9817AE6797AEA1676D96BEB5E9863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4489EFC1F1243786267EBC8716816D68 /* IconFontKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D52B0552792DE7C7406F1DDA9A501DA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1A04EC33ED3BDFC62C53ADD551A997E /* devicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D6E9CA23C83498092A586F90F2878A7E /* Genericons */ = {
+			isa = PBXGroup;
+			children = (
+				9811DB069BE0E3AC31FA5BF6C4A3B831 /* IFGenericons.h */,
+				4D74E45110B825A871968B4C1761164F /* IFGenericons.m */,
+				32FE94AB878C8E14B2D2324F2C5994AC /* Resources */,
+			);
+			name = Genericons;
+			sourceTree = "<group>";
+		};
+		DFCCE69717D01C3851AD1B4445D22DDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15C28F1A1BCD739F7AA97EF1F4BDB0E9 /* foundation-icons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E0D421D82C33C191CDE29BDBDC41D079 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA7505C6D002C507B281D84443ACFF77 /* Entypo.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2C2330E3D3D5823CE7E797B0CCEBBA3 /* Typicons */ = {
+			isa = PBXGroup;
+			children = (
+				8517430D989B9C35D306EE0563A11CF2 /* IFTypicons.h */,
+				785C3BB9ACBEEF2B0090872A164EA900 /* IFTypicons.m */,
+				4F5C5B5173706888DEFE2CA5FD237CD2 /* Resources */,
+			);
+			name = Typicons;
+			sourceTree = "<group>";
+		};
+		E60950CDC534F5306156B55941D5A35F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				645C6159D817F4CDB082F2BAC034ABCE /* Pe-icon-7-stroke.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E7637B326FAC7DAB8E8F4BA837CCA60F /* MapIcons */ = {
+			isa = PBXGroup;
+			children = (
+				F322A616CC13BD6ECB3B2B76C08A098E /* IFMapIcons.h */,
+				C0F8E24262CA3F047E7813C4881CF886 /* IFMapIcons.m */,
+				15126587C5D2DB121863BC7946B9BFDC /* Resources */,
+			);
+			name = MapIcons;
+			sourceTree = "<group>";
+		};
+		E84E057FFBE8BEDAF4236C71C0DA7566 /* Stroke7Icons */ = {
+			isa = PBXGroup;
+			children = (
+				DD898799A334EAA52FD6E482787B1BCA /* IFStroke7Icons.h */,
+				A4736E5C0FAC37E1A11C031BE450CD56 /* IFStroke7Icons.m */,
+				E60950CDC534F5306156B55941D5A35F /* Resources */,
+			);
+			name = Stroke7Icons;
+			sourceTree = "<group>";
+		};
+		EA696CF8B50B9A85D55732DED3AE5035 /* Devicons */ = {
+			isa = PBXGroup;
+			children = (
+				270909EAE370F07DE8C72D0AD00C12C2 /* IFDevicons.h */,
+				4AB69C24EAC2B7736DE95B3AC78256D0 /* IFDevicons.m */,
+				D52B0552792DE7C7406F1DDA9A501DA2 /* Resources */,
+			);
+			name = Devicons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC9B91C1EE66DBF9D23DE3BF42F6105 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1051ABAA21E1ADE8C548CF153C44D2D8 /* IconFontKit.h in Headers */,
+				F249368C02079B7FCCB9313385FA33D4 /* IFDashicons.h in Headers */,
+				11A1866525383053860145860D5A3AD9 /* IFDevicons.h in Headers */,
+				A162C1C4B49F3831311BC6CC7448E8CF /* IFDripicons.h in Headers */,
+				312E0D03578AD73BC30A1B70D5AFE084 /* IFElusiveIcons.h in Headers */,
+				7635A193A46F7FA43E14DEF2C2E50C70 /* IFEntypo.h in Headers */,
+				9215FEF9ECA4FC74BCD65267A3748152 /* IFEvilIcons.h in Headers */,
+				D2AB680F648D57008D7BCEB6106DDBA9 /* IFFontAwesome.h in Headers */,
+				2A67972E1C7DCD21A5C112839916E5B8 /* IFFoundationIcons.h in Headers */,
+				441B1C005FD50EBE0FBE6BCDCCF2D716 /* IFGenericons.h in Headers */,
+				929A775E40564C2739653EE4A1BD1DE1 /* IFHawconsFilled.h in Headers */,
+				19A3F0A234D848BB7727B8372F4B9CBC /* IFHawconsStroke.h in Headers */,
+				44315A4D4E5F61D3AD29B1EF21328AB1 /* IFIcoMoonFree.h in Headers */,
+				641DF6086429C7568457D18CA1E0A755 /* IFIcon.h in Headers */,
+				9AF137967842A87A875D0A63B351923F /* IFIonicons.h in Headers */,
+				B7ED109E981787192487FB33B5D0FC9F /* IFLigatureSymbols.h in Headers */,
+				CE585C67F41E69272B10D192C511F13F /* IFLinea.h in Headers */,
+				A4EE9F1A3FB6C4FBCE9DC6C52907B8D7 /* IFLineariconsFree.h in Headers */,
+				469D4D3DEBD7BAA034782EBBD186D42F /* IFMapIcons.h in Headers */,
+				659514C5B0D4B018DBD796FC41B800A4 /* IFMaterialDesignIcons.h in Headers */,
+				1B14C4A8767B15EF0D37D920E5E282BF /* IFMaterialIcons.h in Headers */,
+				B33D0C89B36E311338A8D9FCB352D9D2 /* IFMeteocons.h in Headers */,
+				7B06874E4E6921AADD1E04BD371DF610 /* IFMetrizeIcons.h in Headers */,
+				A567A467A911B255B1F048EF24B5733D /* IFMFGLabsIconset.h in Headers */,
+				78399881F89E4DF6726AB05E496C6E85 /* IFOcticons.h in Headers */,
+				6C35AF7298D45B16FFC7D9271BBFFE25 /* IFOpenIconic.h in Headers */,
+				9813AF245332437DE23F29C4634F22C0 /* IFOpenWebIcons.h in Headers */,
+				B8193CD46F11D2246996E282E507193C /* IFStreamlineFree.h in Headers */,
+				7049A267B185570B17449B4D6EAA664E /* IFStroke7Icons.h in Headers */,
+				CD8B6F0CB375413377B7AC470C5421A0 /* IFThemifyIcons.h in Headers */,
+				C454B2F08F1A0841AA9E467A6C4405A2 /* IFTypicons.h in Headers */,
+				C4283E335760987E196FA1024429A2D1 /* IFWeatherIcons.h in Headers */,
+				0127978FCB3223C7016C2E9A2C2F6F2A /* IFZocialButtons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D0AFDA6D8D33CAA7C3860507E66F5646 /* IconFontKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B73D3D25CB38701B06FBE508A6571869 /* Build configuration list for PBXNativeTarget "IconFontKit" */;
+			buildPhases = (
+				DBF562DA30C4E7D4AEAD7412E7E1A054 /* Sources */,
+				2D482B53E10D85CCBDA224EFB5280BED /* Frameworks */,
+				8DC9B91C1EE66DBF9D23DE3BF42F6105 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IconFontKit;
+			productName = IconFontKit;
+			productReference = CC37A6545308B76FB04BDD274D60E0F2 /* libIconFontKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DC0E0CA581742DD6595B63C09FDD6D89 /* Pods-JCDesignButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18653E9A76BF40DAA7478DBEDEF04C26 /* Build configuration list for PBXNativeTarget "Pods-JCDesignButton" */;
+			buildPhases = (
+				79749B65A539035C3DC171FEF5E1A922 /* Sources */,
+				7DD6D94990F901A59DEB5A35EC8D1169 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78031E9BD64831482D1063FB964BC01B /* PBXTargetDependency */,
+			);
+			name = "Pods-JCDesignButton";
+			productName = "Pods-JCDesignButton";
+			productReference = 7AD14FAF1F0280EB20E54EF27B7D154B /* libPods-JCDesignButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AD6DED744E996013462E7DE645CF033B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0AFDA6D8D33CAA7C3860507E66F5646 /* IconFontKit */,
+				DC0E0CA581742DD6595B63C09FDD6D89 /* Pods-JCDesignButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79749B65A539035C3DC171FEF5E1A922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5177E37F7F95AA189EE17A2091594975 /* Pods-JCDesignButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF562DA30C4E7D4AEAD7412E7E1A054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AF3B6B4FB5ECF65C96F83D049303D3 /* IconFontKit-dummy.m in Sources */,
+				9DCFB5BC1EEF44C55F8C68676993873F /* IFDashicons.m in Sources */,
+				7FB5EBBC59DBC6AD3227D3D5B3392D93 /* IFDevicons.m in Sources */,
+				C2E4582FAC5E37B53F23184C516FA591 /* IFDripicons.m in Sources */,
+				AE5FF0773FC298FEBE6FE9E8E672A7D5 /* IFElusiveIcons.m in Sources */,
+				53C73594D8DAB3EC1F0E5A7654F0D3E7 /* IFEntypo.m in Sources */,
+				A03306A9BC1C37C29811254E229F941D /* IFEvilIcons.m in Sources */,
+				175F49BD22D2F8A84A1293E17B4798CD /* IFFontAwesome.m in Sources */,
+				4B3D5C255043EF622782E0FDD96B6EA8 /* IFFoundationIcons.m in Sources */,
+				15E47CCAFEC32F0D31D164D6245EFFEE /* IFGenericons.m in Sources */,
+				685080CE85BFD397F11CC549059E5F18 /* IFHawconsFilled.m in Sources */,
+				2AC46FC62FE81E28B2AA3A20681F21B5 /* IFHawconsStroke.m in Sources */,
+				B342F75E328597C224AB5792278EDDF5 /* IFIcoMoonFree.m in Sources */,
+				4ADB7270F86480882A6261B1069F4905 /* IFIcon.m in Sources */,
+				E3FE0A5418D3D6B372592DB20947A1F2 /* IFIonicons.m in Sources */,
+				A57900FC0564BC9DBB89956241BFAD89 /* IFLigatureSymbols.m in Sources */,
+				0D8995CBF50D9F3CCF8070E96C8A129D /* IFLinea.m in Sources */,
+				82017FA6372AA89873D335DE78B681DF /* IFLineariconsFree.m in Sources */,
+				F276FA553CF773DBB7386D82E61E345E /* IFMapIcons.m in Sources */,
+				A4519E7D33F3F2B3B1FBC108AB894D93 /* IFMaterialDesignIcons.m in Sources */,
+				544D0820F10BE5AE6BF82A5464F4289F /* IFMaterialIcons.m in Sources */,
+				6833281F81E049B37BA673AA7629E471 /* IFMeteocons.m in Sources */,
+				413FAE2485098CCF75F31A2E08090FB4 /* IFMetrizeIcons.m in Sources */,
+				A90B87FD63B086CF2FC5C879B1618003 /* IFMFGLabsIconset.m in Sources */,
+				E142A6D43C02DCB31C76A179EEA7F77D /* IFOcticons.m in Sources */,
+				58F6242486E5B5E175081A155DD10DF7 /* IFOpenIconic.m in Sources */,
+				420D4D183F081BF626CBB804EF313B92 /* IFOpenWebIcons.m in Sources */,
+				375C8281A52BAB431DE0A4EF99410ED5 /* IFStreamlineFree.m in Sources */,
+				99512FCF53EE4E73C1DA6262A510D2B2 /* IFStroke7Icons.m in Sources */,
+				7EB02C2153514306D32BD058309E22F5 /* IFThemifyIcons.m in Sources */,
+				262E09264C9D1112EC23C137397E038F /* IFTypicons.m in Sources */,
+				D6E51FF0C979741A0525ECDAF8790C0D /* IFWeatherIcons.m in Sources */,
+				178E95A4995D4315F23F3BFCD77DE3EC /* IFZocialButtons.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78031E9BD64831482D1063FB964BC01B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IconFontKit;
+			target = D0AFDA6D8D33CAA7C3860507E66F5646 /* IconFontKit */;
+			targetProxy = CBC3A121279D005AD7D839A859C23FA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1FEF10F1192E52D631DCD596DD7D8FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36DD303A565F62E58BD13B09850C83E4 /* IconFontKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IconFontKit/IconFontKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6754835E032876471945A741D69CC2FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE1DE7400B50B08D01FBF174AEF8E95 /* Pods-JCDesignButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7B095FF98707EE4F17DC3128A5BB153F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36DD303A565F62E58BD13B09850C83E4 /* IconFontKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IconFontKit/IconFontKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AF7778584CEDB6F868135E959404E223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F52C45D371EEBB89BEF0E382B71ED06 /* Pods-JCDesignButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18653E9A76BF40DAA7478DBEDEF04C26 /* Build configuration list for PBXNativeTarget "Pods-JCDesignButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6754835E032876471945A741D69CC2FB /* Debug */,
+				AF7778584CEDB6F868135E959404E223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B73D3D25CB38701B06FBE508A6571869 /* Build configuration list for PBXNativeTarget "IconFontKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEF10F1192E52D631DCD596DD7D8FFD /* Debug */,
+				7B095FF98707EE4F17DC3128A5BB153F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
