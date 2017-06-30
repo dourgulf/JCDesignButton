@@ -61,8 +61,14 @@
 }
 
 - (CGSize)intrinsicContentSize {
-    // fade size, our content size priority is lowest, it depend on the label/image content size.
-    return CGSizeMake(10, 10);
+    CGSize leftSize = self.leftIconLabel.intrinsicContentSize;
+    CGSize titleSize = self.titleLabel.intrinsicContentSize;
+    CGSize rightSize = self.rightIconLabel.intrinsicContentSize;
+    CGFloat width = leftSize.width + titleSize.width + rightSize.width;
+    width += self.contentLeftSpace + self.contentRightSpace;
+    width += self.titleLeftMargin + self.titleRightMargin;
+    // fade height, our content size priority is lowest, it depend on the label/image content size.
+    return CGSizeMake(width, 0);
 }
 
 - (void)commonSetup {

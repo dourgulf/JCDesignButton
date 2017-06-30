@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-Qm-VYs" customClass="JCIconFontKitButton">
-                                <rect key="frame" x="129" y="316" width="118.5" height="35.5"/>
+                                <rect key="frame" x="130.5" y="316" width="115.5" height="35.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="help"/>
@@ -30,7 +30,6 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="leftIconColor">
                                         <color key="value" red="0.43123239839999999" green="0.93874603509999999" blue="0.32637024460000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="rightIconText" value="oi-laptop"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                         <color key="value" red="0.88874644041061401" green="0.47241759300231934" blue="0.053587079048156738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
@@ -42,6 +41,7 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="home_icon"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightIconText" value="fa-play"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
