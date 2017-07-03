@@ -23,11 +23,6 @@ IB_DESIGNABLE
 @property (strong, nonatomic) IBInspectable UIColor *borderColor;
 @property (assign, nonatomic) IBInspectable CGFloat borderWidth;
 
-@property (assign, nonatomic) IBInspectable CGFloat contentTopSpace;
-@property (assign, nonatomic) IBInspectable CGFloat contentBottomSpace;
-@property (assign, nonatomic) IBInspectable CGFloat contentLeftSpace;
-@property (assign, nonatomic) IBInspectable CGFloat contentRightSpace;
-
 @property (strong, nonatomic) IBInspectable NSString *title;
 @property (strong, nonatomic) IBInspectable UIColor *titleColor;
 @property (strong, nonatomic) IBInspectable UIFont *titleFont;
@@ -36,18 +31,28 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable CGFloat titleRightMargin;
 
 @property (strong, nonatomic) IBInspectable NSString *leftIconText;
-@property (assign, nonatomic) IBInspectable CGFloat leftIconSize;
 @property (strong, nonatomic) IBInspectable UIColor *leftIconColor;
+@property (assign, nonatomic) IBInspectable CGFloat leftIconSize;
 
 @property (strong, nonatomic) IBInspectable UIImage *leftImage;
+@property (strong, nonatomic) IBInspectable UIColor *leftImageColor;
 @property (assign, nonatomic) IBInspectable CGFloat leftImageHeight;
 @property (assign, nonatomic) IBInspectable CGFloat leftImageWidth;
 
 @property (strong, nonatomic) IBInspectable NSString *rightIconText;
-@property (assign, nonatomic) IBInspectable CGFloat rightIconSize;
 @property (strong, nonatomic) IBInspectable UIColor *rightIconColor;
+@property (assign, nonatomic) IBInspectable CGFloat rightIconSize;
+
+@property (strong, nonatomic) IBInspectable UIImage *rightImage;
+@property (strong, nonatomic) IBInspectable UIColor *rightImageColor;
+@property (assign, nonatomic) IBInspectable CGFloat rightImageHeight;
+@property (assign, nonatomic) IBInspectable CGFloat rightImageWidth;
 
 
+@property (assign, nonatomic) IBInspectable CGFloat contentTopSpace;
+@property (assign, nonatomic) IBInspectable CGFloat contentBottomSpace;
+@property (assign, nonatomic) IBInspectable CGFloat contentLeftSpace;
+@property (assign, nonatomic) IBInspectable CGFloat contentRightSpace;
 
 /**
  * Design attributes will cause views update automatically when disigning, but not in runtime.

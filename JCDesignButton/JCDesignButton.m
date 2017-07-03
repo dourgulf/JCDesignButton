@@ -23,9 +23,17 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentLeadingConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentTrailingConstraint;
 
-@property (weak, nonatomic) IBOutlet UILabel *leftIconLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *leftIconLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *leftImageView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftImageWidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftImageHeightConstraint;
+
 @property (weak, nonatomic) IBOutlet UILabel *rightIconLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *rightImageView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightImageWidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightImageHeightConstraint;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLeadingConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleTrailingConstraint;
@@ -61,10 +69,23 @@
 }
 
 - (CGSize)intrinsicContentSize {
-    CGSize leftSize = self.leftIconLabel.intrinsicContentSize;
+    CGSize leftSize = CGSizeZero;
+    if (!self.leftImageView.hidden) {
+        leftSize = CGSizeMake(self.leftImageWidth, self.leftImageHeight);
+    }
+    else if (!self.leftIconLabel.hidden) {
+        leftSize = self.leftIconLabel.intrinsicContentSize;
+    }
+    
     CGSize titleSize = self.titleLabel.intrinsicContentSize;
-    CGSize rightSize = self.rightIconLabel.intrinsicContentSize;
-    CGFloat width = leftSize.width + titleSize.width + rightSize.width;
+    CGSize rightSize = CGSizeZero;
+    if (!self.rightImageView.hidden) {
+        rightSize = CGSizeMake(self.rightImageWidth, self.rightImageHeight);
+    }
+    else if (!self.rightIconLabel.hidden) {
+        rightSize = self.rightIconLabel.intrinsicContentSize;
+    }
+    CGFloat width = ceil(leftSize.width) + ceil(titleSize.width) + ceil(rightSize.width);
     width += self.contentLeftSpace + self.contentRightSpace;
     width += self.titleLeftMargin + self.titleRightMargin;
     // fade height, our content size priority is lowest, it depend on the label/image content size.
@@ -202,6 +223,46 @@
     [self setupViews];
 }
 
+- (void)setLeftImage:(UIImage *)image {
+    _leftImage  = image;
+    [self setupViews];
+}
+
+- (void)setLeftImageColor:(UIColor *)color {
+    _leftImageColor = color;
+    [self setupViews];
+}
+
+- (void)setLeftImageWidth:(CGFloat)width {
+    _leftImageWidth = width;
+    [self setupViews];
+}
+
+- (void)setLeftImageHeight:(CGFloat)height {
+    _leftImageHeight = height;
+    [self setupViews];
+}
+
+- (void)setRightImage:(UIImage *)image {
+    _rightImage  = image;
+    [self setupViews];
+}
+
+- (void)setRightImageColor:(UIColor *)color {
+    _rightImageColor = color;
+    [self setupViews];
+}
+
+- (void)setRightImageWidth:(CGFloat)width {
+    _rightImageWidth = width;
+    [self setupViews];
+}
+
+- (void)setRightImageHeight:(CGFloat)height {
+    _rightImageHeight = height;
+    [self setupViews];
+}
+
 #endif
 
 - (void)setTitleFont:(UIFont *)font {
@@ -238,8 +299,14 @@
     _leftIconSize = 16.0;
     _leftIconColor = [UIColor whiteColor];
     
+    _leftImageWidth = 20.0;
+    _leftImageHeight = 20.0;
+
     _rightIconSize = 16.0;
     _rightIconColor = [UIColor whiteColor];
+    
+    _rightImageWidth = 20.0;
+    _rightImageHeight = 20.0;
     
     [self loadDesignIconFont];
 }
@@ -251,13 +318,14 @@
 - (void)setupViews {
     [self setupBackgroundColor];
     [self setupGradientBackground];
-    [self setupBorderAndCorners];
     [self setupTitle];
-    [self setupLeftIcon];
-    [self setupRightIcon];
+    // image has more priority
     [self setupLeftImage];
+    [self setupLeftIcon];
     [self setupRightImage];
+    [self setupRightIcon];
     [self setupSpacing];
+    [self setupBorderAndCorners];
 }
 
 - (void)setupBackgroundColor {
@@ -304,7 +372,34 @@
     self.backgroundView.layer.borderWidth = self.borderWidth;
 }
 
+- (void)setupImageView:(UIImageView *)imageView image:(UIImage *)image color:(UIColor *)color {
+    
+    imageView.hidden = (image == nil);
+    if (image != nil) {
+        if (color != nil) {
+            imageView.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            imageView.tintColor = color;
+        }
+        else {
+            imageView.image = image;
+        }
+    }
+}
+
+- (void)setupLeftImage {
+    [self setupImageView:self.leftImageView image:self.leftImage color:self.leftImageColor];
+    self.leftImageWidthConstraint.constant = self.leftImageWidth;
+    self.leftImageHeightConstraint.constant = self.leftImageHeight;
+}
+
+- (void)setupRightImage {
+    [self setupImageView:self.rightImageView image:self.rightImage color:self.rightImageColor];
+    self.rightImageWidthConstraint.constant = self.rightImageWidth;
+    self.rightImageHeightConstraint.constant = self.rightImageHeight;
+}
+
 - (void)setupIconLabel:(UILabel *)label fontIdentifier:(NSString *)identifier fontSize:(CGFloat)size color:(UIColor *)color {
+    
     if (!identifier) {
         label.hidden = YES;
         return ;
@@ -321,20 +416,19 @@
         label.attributedText = icon.attributedString;
     }
 }
+
 - (void)setupLeftIcon {
     [self setupIconLabel:self.leftIconLabel fontIdentifier:self.leftIconText fontSize:self.leftIconSize color:self.leftIconColor];
+    if (!self.leftImageView.hidden) {
+        self.leftIconLabel.hidden = YES;
+    }
 }
 
 - (void)setupRightIcon {
     [self setupIconLabel:self.rightIconLabel fontIdentifier:self.rightIconText fontSize:self.rightIconSize color:self.rightIconColor];
-}
-
-- (void)setupLeftImage {
-    
-}
-
-- (void)setupRightImage {
-    
+    if (!self.rightImageView.hidden) {
+        self.rightIconLabel.hidden = YES;
+    }
 }
 
 - (void)setupTitle {
@@ -357,7 +451,6 @@
     
     self.titleLeadingConstraint.constant = self.titleLeftMargin;
     self.titleTrailingConstraint.constant = self.titleRightMargin;
-    [self setupBorderAndCorners];
 }
 
 #pragma mark Touches

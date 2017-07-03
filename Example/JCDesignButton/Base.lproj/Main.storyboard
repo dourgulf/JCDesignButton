@@ -22,25 +22,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-Qm-VYs" customClass="JCIconFontKitButton">
-                                <rect key="frame" x="130.5" y="316" width="115.5" height="35.5"/>
+                                <rect key="frame" x="146" y="316.5" width="84" height="35.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="help"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="leftIconText" value="fa-mobile"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="leftIconColor">
-                                        <color key="value" red="0.43123239839999999" green="0.93874603509999999" blue="0.32637024460000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                         <color key="value" red="0.88874644041061401" green="0.47241759300231934" blue="0.053587079048156738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="conerRounded" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="conerRounded" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="contentLeftSpace">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="contentRightSpace">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="home_icon"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftIconText" value="fa-mobile"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="rightIconText" value="fa-play"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -54,10 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2660" y="-163.26836581709148"/>
+            <point key="canvasLocation" x="-4705" y="-498"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="home_icon" width="85" height="85"/>
-    </resources>
 </document>
