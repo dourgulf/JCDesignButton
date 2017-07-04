@@ -19,7 +19,9 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonSetup];
+        [self createLabel];
+        [self setupDefaults];
+        [self updateIconText];
     }
     return self;
 }
@@ -27,37 +29,24 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        [self commonSetup];
+        [self createLabel];
+        [self setupDefaults];
     }
     return self;
 }
 
-- (void)commonSetup {
-    [self createLabel];
-    [self setupDefaults];
+-(void)awakeFromNib {
+    [super awakeFromNib];
     [self updateIconText];
 }
 
-#ifdef DEBUG
-#define DESIGN_SUPPORT
-#endif
-
-- (void)setIconText:(NSString *)text {
-    _iconText = text;
-    [self updateIconText];
-}
-
-- (void)setFontSize:(CGFloat)fontSize {
-    _fontSize = fontSize;
+- (void)prepareForInterfaceBuilder {
     [self updateIconText];
 }
 
 - (void)setupDefaults {
     _fontSize = 14.0;
-    
-#ifdef DESIGN_SUPPORT
-    [JCIconFontManager registerIconFont:[IFFontAwesome class] forName:@"fa"];    
-#endif    
+    [self loadDesignIconFont];
 }
 
 - (void)createLabel {
@@ -74,6 +63,10 @@
             self.text = self.iconText;
         }
     }
+}
+
+- (void)loadDesignIconFont {
+    [JCIconFontManager registerIconFont:[IFFontAwesome class] forName:@"fa"];
 }
 
 @end

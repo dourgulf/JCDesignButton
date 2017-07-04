@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
-
+IB_DESIGNABLE 
 @interface JCDesignButton : UIControl
 
 @property (strong, nonatomic) IBInspectable UIColor *bgColor;   //
@@ -29,6 +28,8 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable CGFloat titleFontSize;
 @property (assign, nonatomic) IBInspectable CGFloat titleLeftMargin;
 @property (assign, nonatomic) IBInspectable CGFloat titleRightMargin;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleCenterConstraint;
+
 
 @property (strong, nonatomic) IBInspectable NSString *leftIconText;
 @property (strong, nonatomic) IBInspectable UIColor *leftIconColor;

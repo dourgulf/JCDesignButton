@@ -1,0 +1,30 @@
+{
+  "name": "JCDesignButton",
+  "version": "0.1.0",
+  "summary": "A fully customisable subclass of the native UIControl which allows you to create beautiful buttons.",
+  "homepage": "https://www.g4next.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "dawenhing": "dawenhing@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dourgulf/JCDesignButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JCDesignButton/**/*.{h,m}",
+  "resources": "JCDesignButton/**/*.xib",
+  "dependencies": {
+    "IconFontKit/Core": [
+
+    ],
+    "IconFontKit/FontAwesome": [
+
+    ]
+  }
+}

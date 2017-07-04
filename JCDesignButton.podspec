@@ -1,7 +1,8 @@
+# Bacause the Xcode's BUG, the design support can't be use with Pod.
 Pod::Spec.new do |s|
 	s.name             = 'JCDesignButton'
 	s.version          = '0.1.0'
-	s.summary          = 'A fully customisable subclass of the native UIControl which allows you to create beautiful buttons without writing any line of code.'
+	s.summary          = 'A fully customisable subclass of the native UIControl which allows you to create beautiful buttons.'
 	s.homepage         = 'https://www.g4next.com'
 	s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
 	s.author           = { 'dawenhing' => 'dawenhing@gmail.com' }

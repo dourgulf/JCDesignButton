@@ -2,7 +2,7 @@ platform :ios, '8.0'
 # use_frameworks!
 
 target 'JCDesignButton' do
-#	pod 'JCDesignButton', path: '../'
+	# pod 'JCDesignButton', path: '../'
 	pod 'IconFontKit'
 end
 

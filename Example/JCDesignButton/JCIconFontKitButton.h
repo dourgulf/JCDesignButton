@@ -8,7 +8,7 @@
 
 #import "JCDesignButton.h"
 
+IB_DESIGNABLE
 @interface JCIconFontKitButton : JCDesignButton
-
 
 @end

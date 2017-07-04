@@ -11,7 +11,6 @@
 
 @interface JCDesignButton()
 
-
 @property (weak, nonatomic) UIView *rootView;
 @property (weak, nonatomic) CAGradientLayer *gradient;
 
@@ -45,7 +44,9 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonSetup];
+        [self createViews];
+        [self setupDefaults];
+        [self setupViews];
     }
     return self;
 }
@@ -54,17 +55,46 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        [self commonSetup];
+        [self createViews];
+        [self setupDefaults];
     }
     return self;
 }
 
-- (void)layoutSubviews {
-    if (self.gradient != nil) {
-        [self.gradient removeFromSuperlayer];
-        self.gradient = nil;
-        [self setupGradientBackground];
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self setupViews];
+}
+
+- (void)prepareForInterfaceBuilder {
+    [self updateViews];
+    [self adjustContentOffset];
+}
+
+// make the content center-align
+- (void)adjustContentOffset {
+    CGFloat leftSpace = self.titleLeftMargin;
+    if (!self.leftImageView.hidden) {
+        leftSpace += self.leftImageWidth;
     }
+    else if (!self.leftIconLabel.hidden) {
+        leftSpace += ceil(self.leftIconLabel.intrinsicContentSize.width);
+    }
+    
+    CGFloat rightSpace = self.titleRightMargin;
+    if (!self.rightImageView.hidden) {
+        rightSpace += self.rightImageWidth;
+    }
+    else if (!self.rightIconLabel.hidden) {
+        rightSpace += ceil(self.rightIconLabel.intrinsicContentSize.width);
+    }
+    CGFloat shift = (leftSpace - rightSpace)/2;
+    self.titleCenterConstraint.constant = shift;
+}
+
+- (void)layoutSubviews {
+    [self adjustContentOffset];
+    [self rebuildGradientBackground];
     [self setupBorderAndCorners];
 }
 
@@ -92,186 +122,8 @@
     return CGSizeMake(width, 0);
 }
 
-- (void)commonSetup {
-    [self loadViews];
-    [self setupDefaults];
-    [self setupViews];    
-}
-
-#pragma mark Design property
-#ifdef DEBUG
-#define DESIGN_SUPPORT
-#endif
-
-#ifdef DESIGN_SUPPORT
-- (void)setBgColor:(UIColor *)color {
-    _bgColor = color;
-    [self setupViews];
-}
-
-- (void)setGradientStartColor:(UIColor *)color {
-    _gradientStartColor = color;
-    [self setupViews];
-}
-
-- (void)setGradientEndColor:(UIColor *)color {
-    _gradientEndColor = color;
-    [self setupViews];
-}
-
-- (void)setGradientHorizontal:(BOOL)h {
-    _gradientHorizontal = h;
-    if (self.gradient) {
-        [self.gradient removeFromSuperlayer];
-        self.gradient = nil;
-        [self setupViews];
-    }
-}
-
-- (void)setCornerRadius:(CGFloat)radius {
-    _cornerRadius = radius;
-    [self setupViews];
-}
-
-- (void)setConerRounded:(BOOL)r {
-    _conerRounded = r;
-    [self setupViews];
-}
-
-- (void)setBorderColor:(UIColor *)color {
-    _borderColor = color;
-    [self setupViews];
-}
-
-- (void)setBorderWidth:(CGFloat)w {
-    _borderWidth = w;
-    [self setupViews];
-}
-
-- (void)setContentTopSpace:(CGFloat)space {
-    _contentTopSpace = space;
-    [self setupViews];
-}
-
-- (void)setContentLeftSpace:(CGFloat)space {
-    _contentLeftSpace = space;
-    [self setupViews];
-}
-
-- (void)setContentRightSpace:(CGFloat)space {
-    _contentRightSpace = space;
-    [self setupViews];
-}
-
-- (void)setContentBottomSpace:(CGFloat)space {
-    _contentBottomSpace = space;
-    [self setupViews];
-}
-
-- (void)setTitle:(NSString *)title {
-    _title = title;
-    [self setupViews];
-}
-
-- (void)setTitleColor:(UIColor *)color {
-    _titleColor = color;
-    [self setupViews];
-}
-
-- (void)setTitleFontSize:(CGFloat)fontSize {
-    _titleFontSize = fontSize;
-    [self setupViews];
-}
-
-- (void)setTitleLeftMargin:(CGFloat)margin {
-    _titleLeftMargin = margin;
-    [self setupViews];
-}
-
-- (void)setTitleRightMargin:(CGFloat)margin {
-    _titleRightMargin = margin;
-    [self setupViews];
-}
-
-- (void)setLeftIconText:(NSString *)text {
-    _leftIconText = text;
-    [self setupViews];
-}
-
-- (void)setLeftIconSize:(CGFloat)size {
-    _leftIconSize = size;
-    [self setupViews];
-}
-
-- (void)setLeftIconColor:(UIColor *)color {
-    _leftIconColor = color;
-    [self setupViews];
-}
-
-- (void)setRightIconText:(NSString *)text {
-    _rightIconText = text;
-    [self setupViews];
-}
-
-- (void)setRightIconSize:(CGFloat)size {
-    _rightIconSize = size;
-    [self setupViews];
-}
-
-- (void)setRightIconColor:(UIColor *)color {
-    _rightIconColor = color;
-    [self setupViews];
-}
-
-- (void)setLeftImage:(UIImage *)image {
-    _leftImage  = image;
-    [self setupViews];
-}
-
-- (void)setLeftImageColor:(UIColor *)color {
-    _leftImageColor = color;
-    [self setupViews];
-}
-
-- (void)setLeftImageWidth:(CGFloat)width {
-    _leftImageWidth = width;
-    [self setupViews];
-}
-
-- (void)setLeftImageHeight:(CGFloat)height {
-    _leftImageHeight = height;
-    [self setupViews];
-}
-
-- (void)setRightImage:(UIImage *)image {
-    _rightImage  = image;
-    [self setupViews];
-}
-
-- (void)setRightImageColor:(UIColor *)color {
-    _rightImageColor = color;
-    [self setupViews];
-}
-
-- (void)setRightImageWidth:(CGFloat)width {
-    _rightImageWidth = width;
-    [self setupViews];
-}
-
-- (void)setRightImageHeight:(CGFloat)height {
-    _rightImageHeight = height;
-    [self setupViews];
-}
-
-#endif
-
-- (void)setTitleFont:(UIFont *)font {
-    _titleFont = font;
-    [self setupTitle];
-}
-
 #pragma mark View setup
-- (void)loadViews {
+- (void)createViews {
     NSBundle *bundle = [NSBundle bundleForClass:self.class];
     UINib *nib = [UINib nibWithNibName:@"JCDesignButton" bundle:bundle];
     NSArray *views = [nib instantiateWithOwner:self options:nil];
@@ -284,12 +136,17 @@
 
 - (void)setupDefaults {
     _bgColor = [UIColor grayColor];
+        
     _contentTopSpace = 8.0;
     _contentBottomSpace = 8.0;
     _contentLeftSpace = 16.0;
     _contentRightSpace = 16.0;
     
     _borderColor = [UIColor whiteColor];
+    
+#if TARGET_INTERFACE_BUILDER
+    _title = @"{title}";
+#endif
     
     _titleColor = [UIColor whiteColor];
     _titleFontSize = 16.0;
@@ -318,14 +175,13 @@
 - (void)setupViews {
     [self setupBackgroundColor];
     [self setupGradientBackground];
+    [self setupBorderAndCorners];
     [self setupTitle];
-    // image has more priority
     [self setupLeftImage];
     [self setupLeftIcon];
     [self setupRightImage];
     [self setupRightIcon];
     [self setupSpacing];
-    [self setupBorderAndCorners];
 }
 
 - (void)setupBackgroundColor {
@@ -336,8 +192,9 @@
     if (self.gradientStartColor != nil &&
         self.gradientEndColor != nil && 
         self.gradient == nil) {
-        
-        self.gradient = [CAGradientLayer layer];
+                
+        CAGradientLayer *gradient = [[CAGradientLayer alloc] init];
+        self.gradient = gradient;
         self.gradient.frame = self.bounds;
         self.gradient.colors = @[(__bridge id)self.gradientStartColor.CGColor, (__bridge id)self.gradientEndColor.CGColor];
         self.gradient.startPoint = CGPointMake(0, 0);
@@ -349,6 +206,14 @@
         }
         [self.backgroundView.layer addSublayer:self.gradient];
     }
+}
+
+- (void)rebuildGradientBackground {
+    if (self.gradient != nil) {
+        [self.gradient removeFromSuperlayer];
+        self.gradient = nil;
+    }
+    [self setupGradientBackground];
 }
 
 - (void)setupBorderAndCorners {
