@@ -120,7 +120,7 @@
     CGFloat width = ceil(leftSize.width) + ceil(titleSize.width) + ceil(rightSize.width);
     width += self.contentLeftSpace + self.contentRightSpace;
     width += self.titleLeftMargin + self.titleRightMargin;
-    // fade height, our content size priority is lowest, it depend on the label/image content size.
+    // fade height, our content size priority is lowest, it depend on the label content size.
     return CGSizeMake(width, 0);
 }
 
