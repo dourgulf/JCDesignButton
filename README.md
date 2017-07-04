@@ -10,7 +10,7 @@ You can remove this dependency by define macro `JCDESIGN_BUTTON_DISABLE_ICONFONT
 
 **Don't use Pod bacause Xcode has BUG with Pod.**
 
-1. Add `JCDesignButton` classes to your project, if you had remove iconfont feature, only import JCDesignButton.\*, otherwise  JCIconFontManager.\* also need to be import.
+1. Add `JCDesignButton` classes to your project, if you had remove iconfont feature, only import JCDesignButton.\*, otherwise  JCIconFontManager.\* also needed.
 2. Add a UIView to your XIB or Storyboard, Change it's class to `JCDesignButton`
 3. Design your button as you want
 
@@ -18,20 +18,16 @@ You can remove this dependency by define macro `JCDESIGN_BUTTON_DISABLE_ICONFONT
 
 ## How to make more IconFontKit support
 
-`JCDesignButton` Only use one font set IconFontKit—Awesome at design time. You can use `JCIconFontManager` to register more font set by runtime at any place. You can find such code at Example project, it's `AppDelegate` launch method.
+`JCDesignButton` Only use one font set(Awesome) from IconFontKit at design time. You can use `JCIconFontManager` to register more font set by runtime at any place. You can find such code at example project in it's `AppDelegate` launch method.
 
+If you want more font set at design time. You can do it with two ways: 
 
-
-If you want more font set at design time. You can do it with two method. 
-
-* Modify `-loadDesignIconFont` method in file JCDesignButton.m
+* Modify `-loadDesignIconFont` method in file JCDesignButton.m directly;
 * or, derive a custom class from `JCDesignButton`, and rewrite the `-loadDesignIconFont` method. You can find an exmple class named `JCIconFontKitButton` in example project.
-
-
 
 ## TODO
 
-1. Maybe createViews from code not XIB.
+1. Maybe createViews from code not Nib.
 2. Verical layout support.
 3. Async loading interface support.
 
