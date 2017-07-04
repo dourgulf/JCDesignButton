@@ -5,9 +5,11 @@
 //  Created by DawenRie on 23/06/2017.
 //  Copyright © 2017 DawenRie. All rights reserved.
 //
-
 #import "JCDesignButton.h"
+
+#ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT
 #import "JCIconFontManager.h"
+#endif
 
 @interface JCDesignButton()
 
@@ -158,14 +160,16 @@
     
     _leftImageWidth = 20.0;
     _leftImageHeight = 20.0;
-
+    
     _rightIconSize = 16.0;
     _rightIconColor = [UIColor whiteColor];
     
     _rightImageWidth = 20.0;
     _rightImageHeight = 20.0;
     
+#ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT
     [self loadDesignIconFont];
+#endif
 }
 
 - (void)updateViews {
@@ -180,7 +184,7 @@
     [self setupLeftImage];
     [self setupLeftIcon];
     [self setupRightImage];
-    [self setupRightIcon];
+    [self setupRightIcon];    
     [self setupSpacing];
 }
 
@@ -269,6 +273,7 @@
         label.hidden = YES;
         return ;
     }
+#ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT    
     IFIcon *icon = [JCIconFontManager iconWithIdentifier:identifier fontSize:size];
 #ifdef DEBUG
     if (!icon) {
@@ -280,6 +285,11 @@
         label.textColor = color;
         label.attributedText = icon.attributedString;
     }
+#else
+    label.hidden = (identifier == nil);
+    label.text = identifier;
+    label.textColor = color;
+#endif
 }
 
 - (void)setupLeftIcon {
@@ -295,6 +305,7 @@
         self.rightIconLabel.hidden = YES;
     }
 }
+
 
 - (void)setupTitle {
     self.titleLabel.hidden = (self.title.length == 0);
@@ -335,16 +346,14 @@
 
 @end
 
-#ifndef JCDESIGN_BUTTON_NO_ICONFONT
+#ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT
 #import "IFFontAwesome.h"
-#endif
 
 @implementation JCDesignButton(Subclass)
 
 - (void)loadDesignIconFont {
-#ifndef JCDESIGN_BUTTON_NO_ICONFONT
     [JCIconFontManager registerIconFont:[IFFontAwesome class] forName:@"fa"];
-#endif
 }
 
 @end
+#endif

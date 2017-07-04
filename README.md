@@ -1,19 +1,24 @@
 A fully customisable subclass of the native UIControl which allows you to create beautiful buttons with Xcode IDE without writing any code.
 
 
+## Dependency IconFontKit
+It depend the [IconFontKit](https://github.com/ElfSundae/IconFontKit) core and Awesome font set.
+
+You can remove this dependency by define macro `JCDESIGN_BUTTON_DISABLE_ICONFONT`
 
 ## Installation
 
-1. Don't use Pod bacuase Xcode has BUG with Pod
-2. Add `JCDesignButton` classes to your project
-3. Add a UIView to your XIB or Storyboard, Change the class to `JCDesignButton`
-4. Design your button as you want
+**Don't use Pod bacause Xcode has BUG with Pod.**
+
+1. Add `JCDesignButton` classes to your project, if you had remove iconfont feature, only import JCDesignButton.\*, otherwise  JCIconFontManager.\* also need to be import.
+2. Add a UIView to your XIB or Storyboard, Change it's class to `JCDesignButton`
+3. Design your button as you want
 
 
 
 ## How to make more IconFontKit support
 
-`JCDesignButton` Only support one font set from IconFontKit—Awesome at design time. You can use `JCIconFontManager` to register more font set by runtime at any place. You can find such code at Example project, it's `AppDelegate` launch method.
+`JCDesignButton` Only use one font set IconFontKit—Awesome at design time. You can use `JCIconFontManager` to register more font set by runtime at any place. You can find such code at Example project, it's `AppDelegate` launch method.
 
 
 

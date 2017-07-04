@@ -21,15 +21,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzt-5n-KcO" customClass="JCIconFontKitButton">
-                                <rect key="frame" x="135.5" y="315.5" width="104" height="36.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INd-Q4-gZG" customClass="JCDesignButton">
+                                <rect key="frame" x="132" y="315.5" width="111" height="36.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftIconText" value="fa-mobile"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftIconColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xzt-5n-KcO" firstAttribute="centerY" secondItem="frA-mb-mBb" secondAttribute="centerY" id="Kcq-Kv-grs"/>
-                            <constraint firstItem="xzt-5n-KcO" firstAttribute="centerX" secondItem="frA-mb-mBb" secondAttribute="centerX" id="ehz-0C-aA8"/>
+                            <constraint firstItem="INd-Q4-gZG" firstAttribute="centerY" secondItem="frA-mb-mBb" secondAttribute="centerY" id="Mm2-Nc-We5"/>
+                            <constraint firstItem="INd-Q4-gZG" firstAttribute="centerX" secondItem="frA-mb-mBb" secondAttribute="centerX" id="dky-vv-LZP"/>
                         </constraints>
                     </view>
                 </viewController>

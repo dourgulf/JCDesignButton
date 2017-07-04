@@ -30,7 +30,6 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable CGFloat titleRightMargin;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleCenterConstraint;
 
-
 @property (strong, nonatomic) IBInspectable NSString *leftIconText;
 @property (strong, nonatomic) IBInspectable UIColor *leftIconColor;
 @property (assign, nonatomic) IBInspectable CGFloat leftIconSize;
@@ -56,13 +55,13 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable CGFloat contentRightSpace;
 
 /**
- * Design attributes will cause views update automatically when disigning, but not in runtime.
- * So if you set it in runtime, make sure call `updateViews`
+ * If you set it in runtime, make sure call `updateViews`
  */
 - (void)updateViews;
 
 @end
 
+#ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT
 /**
  * We only support one icon font(Awesome) at design time by default, 
  *
@@ -76,3 +75,4 @@ IB_DESIGNABLE
 - (void)loadDesignIconFont;
 
 @end
+#endif
