@@ -14,7 +14,8 @@ You can remove this dependency by define macro `JCDESIGN_BUTTON_DISABLE_ICONFONT
 2. Add a UIView to your XIB or Storyboard, Change it's class to `JCDesignButton`
 3. Design your button as you want
 
-
+![design image](Documents/design1.png)
+![design image](Documents/design2.png)
 
 ## How to make more IconFontKit support
 
