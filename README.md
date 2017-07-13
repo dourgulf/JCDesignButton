@@ -4,13 +4,13 @@ A fully customisable subclass of the native UIControl which allows you to create
 ## Dependency IconFontKit
 It depend the [IconFontKit](https://github.com/ElfSundae/IconFontKit) core and Awesome font set.
 
-You can remove this dependency by define macro `JCDESIGN_BUTTON_DISABLE_ICONFONT`
+**You can remove this dependency by define macro `JCDESIGN_BUTTON_DISABLE_ICONFONT`**
 
 ## Installation
 
 **Don't use Pod bacause Xcode has BUG with Pod.**
 
-1. Add `JCDesignButton` classes to your project, if you had remove iconfont feature, only import JCDesignButton.\*, otherwise  JCIconFontManager.\* also needed.
+1. Add JCDesignButton.* JCIconFontManager.* to your project. 
 2. Add a UIView to your XIB or Storyboard, Change it's class to `JCDesignButton`
 3. Design your button as you want
 
@@ -19,18 +19,17 @@ You can remove this dependency by define macro `JCDESIGN_BUTTON_DISABLE_ICONFONT
 
 ## How to make more IconFontKit support
 
-`JCDesignButton` Only use one font set(Awesome) from IconFontKit at design time. You can use `JCIconFontManager` to register more font set by runtime at any place. You can find such code at example project in it's `AppDelegate` launch method.
+`JCDesignButton` Only use one font set(Awesome) from IconFontKit at design time.
 
-If you want more font set at design time. You can do it with two ways: 
+If you want more font set at design time or use your own icon font. You can do it with two ways: 
 
-* Modify `-loadDesignIconFont` method in file JCDesignButton.m directly;
-* or, derive a custom class from `JCDesignButton`, and rewrite the `-loadDesignIconFont` method. You can find an exmple class named `JCIconFontKitButton` in example project.
+1. Modify `-loadDesignIconFont` method in file JCDesignButton.m directly;
+2. or, derive a custom class from `JCDesignButton`, and rewrite the `-loadDesignIconFont` method. You can find an exmple class named `JCIconFontKitButton` in example project, and change class of UIView in your XIB from `JCDesignButton` to your custom class.
 
 ## TODO
 
-1. Maybe createViews from code not Nib.
-2. Verical layout support.
-3. Async loading interface support.
+1. Verical layout support.
+2. Async loading interface support.
 
 ## License
 MIT License

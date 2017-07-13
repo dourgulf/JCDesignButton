@@ -2,14 +2,16 @@
 //  JCDesignButton.m
 //  JCDesignButton
 //
-//  Created by DawenRie on 23/06/2017.
-//  Copyright © 2017 DawenRie. All rights reserved.
+//  Created by dawenhing on 23/06/2017.
+//  Copyright © 2017 dawenhing. All rights reserved.
 //
 #import "JCDesignButton.h"
 
 #ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT
 #import "JCIconFontManager.h"
 #endif
+
+//#define TARGET_INTERFACE_BUILDER 1
 
 @interface JCDesignButton()
 
@@ -19,25 +21,13 @@
 @property (weak, nonatomic) IBOutlet UIView *backgroundView;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentTopConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentBottomConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentLeadingConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentTrailingConstraint;
-
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *leftIconLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *leftImageView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftImageWidthConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftImageHeightConstraint;
 
 @property (weak, nonatomic) IBOutlet UILabel *rightIconLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *rightImageView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightImageWidthConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightImageHeightConstraint;
-
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLeadingConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleTrailingConstraint;
 
 @end
 
@@ -53,8 +43,7 @@
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
+- (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         [self createViews];
@@ -69,71 +58,147 @@
 }
 
 - (void)prepareForInterfaceBuilder {
-    [self updateViews];
-    [self adjustContentOffset];
-}
-
-// make the content center-align
-- (void)adjustContentOffset {
-    CGFloat leftSpace = self.titleLeftMargin;
-    if (!self.leftImageView.hidden) {
-        leftSpace += self.leftImageWidth;
-    }
-    else if (!self.leftIconLabel.hidden) {
-        leftSpace += ceil(self.leftIconLabel.intrinsicContentSize.width);
-    }
-    
-    CGFloat rightSpace = self.titleRightMargin;
-    if (!self.rightImageView.hidden) {
-        rightSpace += self.rightImageWidth;
-    }
-    else if (!self.rightIconLabel.hidden) {
-        rightSpace += ceil(self.rightIconLabel.intrinsicContentSize.width);
-    }
-    CGFloat shift = (leftSpace - rightSpace)/2;
-    self.titleCenterConstraint.constant = shift;
+    [self setupViews];
 }
 
 - (void)layoutSubviews {
-    [self adjustContentOffset];
+    [self setupLayout];
     [self rebuildGradientBackground];
     [self setupBorderAndCorners];
 }
 
 - (CGSize)intrinsicContentSize {
-    CGSize leftSize = CGSizeZero;
-    if (!self.leftImageView.hidden) {
-        leftSize = CGSizeMake(self.leftImageWidth, self.leftImageHeight);
-    }
-    else if (!self.leftIconLabel.hidden) {
-        leftSize = self.leftIconLabel.intrinsicContentSize;
-    }
     
-    CGSize titleSize = self.titleLabel.intrinsicContentSize;
-    CGSize rightSize = CGSizeZero;
-    if (!self.rightImageView.hidden) {
-        rightSize = CGSizeMake(self.rightImageWidth, self.rightImageHeight);
-    }
-    else if (!self.rightIconLabel.hidden) {
-        rightSize = self.rightIconLabel.intrinsicContentSize;
-    }
-    CGFloat width = ceil(leftSize.width) + ceil(titleSize.width) + ceil(rightSize.width);
+    CGSize leftSize = [self leftElementSize];
+    CGSize titleSize = [self titleElementSize];
+    CGSize rightSize = [self rightElementSize];
+    
+    CGFloat width = leftSize.width + titleSize.width + rightSize.width;
     width += self.contentLeftSpace + self.contentRightSpace;
     width += self.titleLeftMargin + self.titleRightMargin;
     // fade height, our content size priority is lowest, it depend on the label content size.
-    return CGSizeMake(width, 0);
+    CGFloat height = titleSize.height;
+    if (leftSize.height > height) {
+        height = leftSize.height;
+    }
+    if (rightSize.height > height) {
+        height = rightSize.height;
+    }
+    height += self.contentTopSpace + self.contentBottomSpace;
+    
+    return CGSizeMake(width, height);
 }
 
 #pragma mark View setup
+- (UILabel *)leftIconLabel {
+    if (!_leftIconLabel) {
+        UILabel *l = [[UILabel alloc] init];
+        [self.contentView addSubview:l];
+        _leftIconLabel = l;
+    }
+    return _leftIconLabel;
+}
+
+- (BOOL)hasLeftIcon {
+    return _leftIconLabel && !_leftIconLabel.hidden;
+}
+
+- (UILabel *)rightIconLabel {
+    if (!_rightIconLabel) {
+        UILabel *l = [[UILabel alloc] init];
+        [self.contentView addSubview:l];
+        _rightIconLabel = l;
+    }
+    return _rightIconLabel;
+}
+
+- (BOOL)hasRightIcon {
+    return _rightIconLabel && !_rightIconLabel.hidden;
+}
+
+- (UIImageView *)leftImageView {
+    if (!_leftImageView) {
+        UIImageView *iv = [[UIImageView alloc] init];
+        [self.contentView addSubview:iv];
+        _leftImageView = iv;
+    }
+    return _leftImageView;
+}
+
+- (CGSize)leftImageSize {
+    CGSize size = CGSizeMake(self.leftImageWidth, self.leftImageHeight);
+    if (size.width == 0) {
+        size.width = self.leftImage.size.width;
+    }
+    if (size.height == 0) {
+        size.height = self.leftImage.size.height;
+    }
+    return size;
+}
+
+- (BOOL)hasLeftImage {
+    return _leftImageView && !_leftImageView.hidden;
+}
+
+- (UIImageView *)rightImageView {
+    if (!_rightImageView) {
+        UIImageView *iv = [[UIImageView alloc] init];
+        [self.contentView addSubview:iv];
+        _rightImageView = iv;
+    }
+    return _rightImageView;
+}
+
+- (CGSize)rightImageSize {
+    CGSize size = CGSizeMake(self.rightImageWidth, self.rightImageHeight);
+    if (size.width == 0) {
+        size.width = self.rightImage.size.width;
+    }
+    if (size.height == 0) {
+        size.height = self.rightImage.size.height;
+    }
+    return size;
+}
+
+- (BOOL)hasRightImage {
+    return _rightImageView && !_rightImageView.hidden;
+}
+
+- (CGSize)leftElementSize {
+    if ([self hasLeftImage]) {
+        return [self leftImageSize];
+    }
+    else if ([self hasLeftIcon]) {
+        CGSize size = self.leftIconLabel.intrinsicContentSize;
+        return CGSizeMake(ceil(size.width), ceil(size.height));
+    }
+    return CGSizeZero;
+}
+
+- (CGSize)rightElementSize {
+    if ([self hasRightImage]) {
+        return [self rightImageSize];
+    }
+    else if ([self hasRightIcon]) {
+        CGSize size = self.rightIconLabel.intrinsicContentSize;
+        return CGSizeMake(ceil(size.width), ceil(size.height));
+    }
+    return CGSizeZero;
+}
+
+- (CGSize)titleElementSize {
+    CGSize size = self.titleLabel.intrinsicContentSize;
+    return CGSizeMake(ceil(size.width), ceil(size.height));
+}
+
 - (void)createViews {
-    NSBundle *bundle = [NSBundle bundleForClass:self.class];
-    UINib *nib = [UINib nibWithNibName:@"JCDesignButton" bundle:bundle];
-    NSArray *views = [nib instantiateWithOwner:self options:nil];
-    NSAssert(views.count > 0, @"Invalid XIB file?");
-    self.rootView = views[0];
-    self.rootView.frame = self.bounds;
-    self.rootView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self addSubview:self.rootView];
+    UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
+    [self addSubview:v];
+    self.backgroundView = v;
+    self.contentView = self;
+    UILabel *title = [[UILabel alloc] init];
+    [self.contentView addSubview:title];
+    self.titleLabel = title;
 }
 
 - (void)setupDefaults {
@@ -157,16 +222,10 @@
     
     _leftIconSize = 16.0;
     _leftIconColor = [UIColor whiteColor];
-    
-    _leftImageWidth = 20.0;
-    _leftImageHeight = 20.0;
-    
+        
     _rightIconSize = 16.0;
     _rightIconColor = [UIColor whiteColor];
-    
-    _rightImageWidth = 20.0;
-    _rightImageHeight = 20.0;
-    
+        
 #ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT
     [self loadDesignIconFont];
 #endif
@@ -178,14 +237,14 @@
 
 - (void)setupViews {
     [self setupBackgroundColor];
-    [self setupGradientBackground];
-    [self setupBorderAndCorners];
     [self setupTitle];
     [self setupLeftImage];
     [self setupLeftIcon];
     [self setupRightImage];
     [self setupRightIcon];    
-    [self setupSpacing];
+    [self setupLayout];
+    [self setupGradientBackground];
+    [self setupBorderAndCorners];
 }
 
 - (void)setupBackgroundColor {
@@ -243,36 +302,29 @@
 
 - (void)setupImageView:(UIImageView *)imageView image:(UIImage *)image color:(UIColor *)color {
     
-    imageView.hidden = (image == nil);
-    if (image != nil) {
-        if (color != nil) {
-            imageView.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-            imageView.tintColor = color;
-        }
-        else {
-            imageView.image = image;
-        }
+    if (color != nil) {
+        imageView.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        imageView.tintColor = color;
+    }
+    else {
+        imageView.image = image;
     }
 }
 
 - (void)setupLeftImage {
-    [self setupImageView:self.leftImageView image:self.leftImage color:self.leftImageColor];
-    self.leftImageWidthConstraint.constant = self.leftImageWidth;
-    self.leftImageHeightConstraint.constant = self.leftImageHeight;
+    if (self.leftImage != nil) {
+        [self setupImageView:self.leftImageView image:self.leftImage color:self.leftImageColor];
+    }
 }
 
 - (void)setupRightImage {
-    [self setupImageView:self.rightImageView image:self.rightImage color:self.rightImageColor];
-    self.rightImageWidthConstraint.constant = self.rightImageWidth;
-    self.rightImageHeightConstraint.constant = self.rightImageHeight;
+    if (self.rightImage != nil) {
+        [self setupImageView:self.rightImageView image:self.rightImage color:self.rightImageColor];
+    }
 }
 
 - (void)setupIconLabel:(UILabel *)label fontIdentifier:(NSString *)identifier fontSize:(CGFloat)size color:(UIColor *)color {
     
-    if (!identifier) {
-        label.hidden = YES;
-        return ;
-    }
 #ifndef JCDESIGN_BUTTON_DISABLE_ICONFONT    
     IFIcon *icon = [JCIconFontManager iconWithIdentifier:identifier fontSize:size];
 #ifdef DEBUG
@@ -285,24 +337,30 @@
         label.textColor = color;
         label.attributedText = icon.attributedString;
     }
+    
+#if TARGET_INTERFACE_BUILDER
+    else {
+        label.hidden = NO;
+        label.textColor = color;
+        label.text = @"invalid";
+    }
+#endif
+    
 #else
-    label.hidden = (identifier == nil);
     label.text = identifier;
     label.textColor = color;
 #endif
 }
 
 - (void)setupLeftIcon {
-    [self setupIconLabel:self.leftIconLabel fontIdentifier:self.leftIconText fontSize:self.leftIconSize color:self.leftIconColor];
-    if (!self.leftImageView.hidden) {
-        self.leftIconLabel.hidden = YES;
+    if (self.leftIconText != nil && ![self hasLeftImage]) {
+        [self setupIconLabel:self.leftIconLabel fontIdentifier:self.leftIconText fontSize:self.leftIconSize color:self.leftIconColor];
     }
 }
 
 - (void)setupRightIcon {
-    [self setupIconLabel:self.rightIconLabel fontIdentifier:self.rightIconText fontSize:self.rightIconSize color:self.rightIconColor];
-    if (!self.rightImageView.hidden) {
-        self.rightIconLabel.hidden = YES;
+    if (self.rightIconText != nil && ![self hasRightImage]) {
+        [self setupIconLabel:self.rightIconLabel fontIdentifier:self.rightIconText fontSize:self.rightIconSize color:self.rightIconColor];
     }
 }
 
@@ -319,14 +377,76 @@
     }
 }
 
-- (void)setupSpacing {
-    self.contentTopConstraint.constant = self.contentTopSpace;
-    self.contentLeadingConstraint.constant = self.contentLeftSpace;
-    self.contentTrailingConstraint.constant = self.contentRightSpace;
-    self.contentBottomConstraint.constant = self.contentBottomSpace;
+// make the content center-align
+- (CGSize)contentCenterOffset {
+    CGFloat leftSpace = [self leftElementSize].width + self.titleLeftMargin;
+    CGFloat rightSpace= [self rightElementSize].width + self.titleRightMargin;
     
-    self.titleLeadingConstraint.constant = self.titleLeftMargin;
-    self.titleTrailingConstraint.constant = self.titleRightMargin;
+    CGFloat shift = (leftSpace - rightSpace)/2;
+    return CGSizeMake(shift, 0);
+}
+
+- (void)setupLayout {
+    CGSize contentSize = self.frame.size;
+    CGRect frame = CGRectMake(0, 0, contentSize.width, contentSize.height);
+    self.backgroundView.frame = frame;
+    
+    CGSize contentOffset = [self contentCenterOffset];
+    CGPoint titleCenter = CGPointMake(contentSize.width/2.0, contentSize.height/2.0);
+    titleCenter.x += contentOffset.width;
+    titleCenter.y += contentOffset.height;
+    
+    // title 
+    CGRect titleFrame = CGRectZero;
+    titleFrame.size = [self titleElementSize];
+    self.titleLabel.frame = titleFrame;
+    self.titleLabel.center = titleCenter;
+    
+    [self setupLeftLayout];
+    [self setupRightLayout];
+}
+
+- (void)setupLeftLayout {
+    UIView *leftView = nil;
+    if ([self hasLeftImage]) {
+        leftView = self.leftImageView;
+    }
+    else if ([self hasLeftIcon]) {
+        leftView = self.leftIconLabel;
+    }
+    else {
+        return ;
+    }
+    
+    CGSize contentSize = [self leftElementSize];
+    CGRect leftFrame = CGRectMake(0, 0, contentSize.width, contentSize.height);
+    leftFrame.size = contentSize;
+    leftView.frame = leftFrame;
+    CGPoint titleCenter = self.titleLabel.center;
+    CGFloat distance = (self.titleLabel.frame.size.width/2 + self.titleLeftMargin + leftFrame.size.width/2);
+    CGPoint leadingCenter = CGPointMake(ceil(titleCenter.x - distance), titleCenter.y);
+    leftView.center = leadingCenter;
+}
+
+- (void)setupRightLayout {
+    UIView *rightView = nil;
+    if ([self hasRightImage]) {
+        rightView = self.rightImageView;
+    }
+    else if ([self hasRightIcon]) {
+        rightView = self.rightIconLabel;
+    }
+    else {
+        return ;
+    }
+    
+    CGSize contentSize = [self rightElementSize];
+    CGRect rightFrame = CGRectMake(0, 0, contentSize.width, contentSize.height);
+    rightView.frame = rightFrame;
+    CGPoint titleCenter = self.titleLabel.center;
+    CGFloat distance = self.titleLabel.frame.size.width/2 + self.titleRightMargin + rightFrame.size.width/2;
+    CGPoint leadingCenter = CGPointMake(ceil(titleCenter.x + distance), titleCenter.y);
+    rightView.center = leadingCenter;    
 }
 
 #pragma mark Touches

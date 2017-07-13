@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:JCDesignButton.xcodeproj">
+      location = "group:/Users/dawenrie/Desktop/dw/dourgulf-github/JCDesignButton/Example/JCDesignButton.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

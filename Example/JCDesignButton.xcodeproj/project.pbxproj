@@ -25,6 +25,8 @@
 		2CA7651D54CCB2932DA5A768 /* libPods-JCDesignButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCDesignButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1D845935191F969F8CB6A2 /* Pods-JCDesignButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCDesignButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCDesignButton/Pods-JCDesignButton.debug.xcconfig"; sourceTree = "<group>"; };
 		6B75772E47048F9C2CA7F351 /* Pods-JCDesignButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCDesignButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCDesignButton/Pods-JCDesignButton.release.xcconfig"; sourceTree = "<group>"; };
+		8900F49C1F17109D00CCCF1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8900F49D1F17109D00CCCF1B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		893974351F038045002E4605 /* JCIconFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIconFontLabel.h; sourceTree = "<group>"; };
 		893974361F038045002E4605 /* JCIconFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIconFontLabel.m; sourceTree = "<group>"; };
 		893B5C891EFCEA000082A316 /* JCDesignButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCDesignButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,8 @@
 		897F46BB1F0264FE003264DD /* JCDesignButton */ = {
 			isa = PBXGroup;
 			children = (
+				8900F49C1F17109D00CCCF1B /* README.md */,
+				8900F49D1F17109D00CCCF1B /* LICENSE.md */,
 				897F46BC1F0264FE003264DD /* JCDesignButton.h */,
 				897F46BD1F0264FE003264DD /* JCDesignButton.m */,
 				897F46BE1F0264FE003264DD /* JCDesignButton.xib */,
@@ -165,8 +169,9 @@
 		893B5C811EFCEA000082A316 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JC;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = DawenRie;
+				ORGANIZATIONNAME = dawenhing;
 				TargetAttributes = {
 					893B5C881EFCEA000082A316 = {
 						CreatedOnToolsVersion = 8.3.3;

@@ -1,9 +1,9 @@
 //
-//  JCIconFont.m
-//  Pods
+//  JCIconFontManager.m
+//  JCDesignButton
 //
-//  Created by DawenRie on 23/06/2017.
-//
+//  Created by dawenhing on 23/06/2017.
+//  Copyright © 2017 dawenhing. All rights reserved.
 //
 
 #import "JCIconFontManager.h"

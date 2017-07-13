@@ -65,10 +65,10 @@ IB_DESIGNABLE
 /**
  * We only support one icon font(Awesome) at design time by default, 
  *
- * You can use `CIconFontManager` register any icon font from `IconFontKit`, but you can't apply in design time.
- * So, if you want to support more icon font at design time, 
+ * You can use `CIconFontManager` register any icon font from `IconFontKit`, but you can't apply it at design time.
+ * If you want to support more icon font at design time, 
  * you can derive your custom class and implement `loadDesignIconFont` and load any icon font you want.
- * See the `JCIconKitButton.h
+ * See the `JCIconKitButton.h`
  */
 @interface JCDesignButton(Subclass)
 
