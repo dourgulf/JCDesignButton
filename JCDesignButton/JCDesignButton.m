@@ -73,20 +73,38 @@
     CGSize titleSize = [self titleElementSize];
     CGSize rightSize = [self rightElementSize];
     
-    CGFloat width = leftSize.width + titleSize.width + rightSize.width;
-    width += self.contentLeftSpace + self.contentRightSpace;
-    width += self.titleLeftMargin + self.titleRightMargin;
-    // fade height, our content size priority is lowest, it depend on the label content size.
-    CGFloat height = titleSize.height;
-    if (leftSize.height > height) {
-        height = leftSize.height;
+    if (!self.verticalLayout) {
+        // horizontal
+        CGFloat width = leftSize.width + titleSize.width + rightSize.width;
+        width += self.contentLeftSpace + self.contentRightSpace;
+        width += self.titleLeftMargin + self.titleRightMargin;
+        // fade height, our content size priority is lowest, it depend on the label content size.
+        CGFloat height = titleSize.height;
+        if (leftSize.height > height) {
+            height = leftSize.height;
+        }
+        if (rightSize.height > height) {
+            height = rightSize.height;
+        }
+        height += self.contentTopSpace + self.contentBottomSpace;
+        
+        return CGSizeMake(width, height);
     }
-    if (rightSize.height > height) {
-        height = rightSize.height;
+    else {
+        // veritcal
+        CGFloat height = titleSize.height + leftSize.height + leftSize.height;
+        height += self.titleLeftMargin + self.titleRightMargin;
+        height += self.contentTopSpace + self.contentBottomSpace;
+        CGFloat width = titleSize.width;
+        if (leftSize.width > width) {
+            width = leftSize.width;
+        }
+        if (rightSize.width > width) {
+            width = rightSize.width;
+        }
+        width += self.contentLeftSpace + self.contentRightSpace;
+        return CGSizeMake(width, height);
     }
-    height += self.contentTopSpace + self.contentBottomSpace;
-    
-    return CGSizeMake(width, height);
 }
 
 #pragma mark View setup
@@ -285,16 +303,21 @@
         if (self.gradient) {
             self.backgroundView.clipsToBounds = YES;
         }
-        self.layer.cornerRadius = self.frame.size.height/2;
-        self.layer.masksToBounds = NO;
+        if (!self.verticalLayout) {
+            self.backgroundView.layer.cornerRadius = self.frame.size.height/2;
+        }
+        else {
+            self.backgroundView.layer.cornerRadius = self.frame.size.width/2.0;
+        }
+//        self.layer.masksToBounds = NO;
     }
     else if (self.cornerRadius > 0) {
         self.backgroundView.layer.cornerRadius = self.cornerRadius;
         if (self.gradient) {
             self.backgroundView.clipsToBounds = YES;
         }
-        self.layer.cornerRadius = self.cornerRadius;
-        self.layer.masksToBounds = NO;
+        self.backgroundView.layer.cornerRadius = self.cornerRadius;
+//        self.layer.masksToBounds = NO;
     }
     self.backgroundView.layer.borderColor = self.borderColor.CGColor;
     self.backgroundView.layer.borderWidth = self.borderWidth;
@@ -379,11 +402,21 @@
 
 // make the content center-align
 - (CGSize)contentCenterOffset {
-    CGFloat leftSpace = [self leftElementSize].width + self.titleLeftMargin;
-    CGFloat rightSpace= [self rightElementSize].width + self.titleRightMargin;
-    
-    CGFloat shift = (leftSpace - rightSpace)/2;
-    return CGSizeMake(shift, 0);
+    CGSize leftSize = [self leftElementSize];
+    CGSize rightSize = [self rightElementSize];
+    if (!self.verticalLayout) {
+        CGFloat leftSpace = leftSize.width + self.titleLeftMargin;
+        CGFloat rightSpace= rightSize.width + self.titleRightMargin;
+        
+        CGFloat shift = (leftSpace + self.contentLeftSpace - rightSpace - self.contentRightSpace)/2;
+        return CGSizeMake(shift, 0);        
+    }
+    else {
+        CGFloat aboveSpace = leftSize.height + self.titleLeftMargin;
+        CGFloat belowSpace = rightSize.height + self.titleRightMargin;
+        CGFloat shift = (aboveSpace + self.contentTopSpace - belowSpace - self.contentBottomSpace)/2;
+        return CGSizeMake(0, shift);
+    }
 }
 
 - (void)setupLayout {
@@ -423,9 +456,14 @@
     leftFrame.size = contentSize;
     leftView.frame = leftFrame;
     CGPoint titleCenter = self.titleLabel.center;
-    CGFloat distance = (self.titleLabel.frame.size.width/2 + self.titleLeftMargin + leftFrame.size.width/2);
-    CGPoint leadingCenter = CGPointMake(ceil(titleCenter.x - distance), titleCenter.y);
-    leftView.center = leadingCenter;
+    if (!self.verticalLayout) {
+        CGFloat distance = self.titleLabel.frame.size.width/2 + self.titleLeftMargin + leftFrame.size.width/2;
+        leftView.center = CGPointMake(titleCenter.x - distance, titleCenter.y);
+    }
+    else {
+        CGFloat distance = self.titleLabel.frame.size.height/2 + self.titleLeftMargin + leftFrame.size.height/2;
+        leftView.center = CGPointMake(titleCenter.x, titleCenter.y - distance);
+    }
 }
 
 - (void)setupRightLayout {
@@ -444,9 +482,14 @@
     CGRect rightFrame = CGRectMake(0, 0, contentSize.width, contentSize.height);
     rightView.frame = rightFrame;
     CGPoint titleCenter = self.titleLabel.center;
-    CGFloat distance = self.titleLabel.frame.size.width/2 + self.titleRightMargin + rightFrame.size.width/2;
-    CGPoint leadingCenter = CGPointMake(ceil(titleCenter.x + distance), titleCenter.y);
-    rightView.center = leadingCenter;    
+    if (!self.verticalLayout) {
+        CGFloat distance = self.titleLabel.frame.size.width/2 + self.titleRightMargin + rightFrame.size.width/2;
+        rightView.center = CGPointMake(titleCenter.x + distance, titleCenter.y);
+    }
+    else {
+        CGFloat distance = self.titleLabel.frame.size.height/2 + self.titleRightMargin + rightFrame.size.height/2;
+        rightView.center = CGPointMake(titleCenter.x, titleCenter.y + distance);
+    }
 }
 
 #pragma mark Touches

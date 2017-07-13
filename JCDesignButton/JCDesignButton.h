@@ -22,6 +22,12 @@ IB_DESIGNABLE
 @property (strong, nonatomic) IBInspectable UIColor *borderColor;
 @property (assign, nonatomic) IBInspectable CGFloat borderWidth;
 
+/** Position the elements vertically, default is NO,
+ *  When it set YES, all `left` property means above title, `right` means below `title`, 
+ *  except `contentLeftSpace` `contentRightSpace`
+ **/
+@property (assign, nonatomic) IBInspectable BOOL verticalLayout; 
+
 @property (strong, nonatomic) IBInspectable NSString *title;
 @property (strong, nonatomic) IBInspectable UIColor *titleColor;
 @property (strong, nonatomic) IBInspectable UIFont *titleFont;
