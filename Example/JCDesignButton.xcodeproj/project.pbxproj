@@ -15,7 +15,6 @@
 		893B5C9C1EFCEA000082A316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893B5C9A1EFCEA000082A316 /* LaunchScreen.storyboard */; };
 		897EE24B1F04997D00B37E63 /* JCIconFontKitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 897EE24A1F04997D00B37E63 /* JCIconFontKitButton.m */; };
 		89B3F9851F0B4465007381D7 /* JCDesignButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 897F46BD1F0264FE003264DD /* JCDesignButton.m */; };
-		89B3F9861F0B4465007381D7 /* JCDesignButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897F46BE1F0264FE003264DD /* JCDesignButton.xib */; };
 		89B3F9871F0B4465007381D7 /* JCIconFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897F46C01F0264FE003264DD /* JCIconFontManager.m */; };
 		89B3F9881F0B4465007381D7 /* JCIconFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 893974361F038045002E4605 /* JCIconFontLabel.m */; };
 		E942CB29E5495D1EF46319F0 /* libPods-JCDesignButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7651D54CCB2932DA5A768 /* libPods-JCDesignButton.a */; };
@@ -43,7 +42,6 @@
 		897EE24A1F04997D00B37E63 /* JCIconFontKitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIconFontKitButton.m; sourceTree = "<group>"; };
 		897F46BC1F0264FE003264DD /* JCDesignButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDesignButton.h; sourceTree = "<group>"; };
 		897F46BD1F0264FE003264DD /* JCDesignButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDesignButton.m; sourceTree = "<group>"; };
-		897F46BE1F0264FE003264DD /* JCDesignButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCDesignButton.xib; sourceTree = "<group>"; };
 		897F46BF1F0264FE003264DD /* JCIconFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIconFontManager.h; sourceTree = "<group>"; };
 		897F46C01F0264FE003264DD /* JCIconFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIconFontManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +111,6 @@
 				8900F49D1F17109D00CCCF1B /* LICENSE.md */,
 				897F46BC1F0264FE003264DD /* JCDesignButton.h */,
 				897F46BD1F0264FE003264DD /* JCDesignButton.m */,
-				897F46BE1F0264FE003264DD /* JCDesignButton.xib */,
 				897F46BF1F0264FE003264DD /* JCIconFontManager.h */,
 				897F46C01F0264FE003264DD /* JCIconFontManager.m */,
 				893974351F038045002E4605 /* JCIconFontLabel.h */,
@@ -204,7 +201,6 @@
 			files = (
 				893B5C9C1EFCEA000082A316 /* LaunchScreen.storyboard in Resources */,
 				893B5C991EFCEA000082A316 /* Assets.xcassets in Resources */,
-				89B3F9861F0B4465007381D7 /* JCDesignButton.xib in Resources */,
 				893B5C971EFCEA000082A316 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
